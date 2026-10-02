@@ -1,16 +1,16 @@
 const projectFiles = [
-  ['mabroukui-6.png', 'تطبيق السيارات', 'تجربة تطبيق للبحث عن السيارات', 'Car Marketplace App', 'Mobile car shopping experience'],
-  ['mabroukui-7.png', 'تطبيق تحويل الأموال', 'تجربة مالية للهواتف', 'Money Transfer App', 'Mobile finance experience'],
-  ['mabroukui-5.png', 'لوحة إدارة المتجر', 'تصميم منتج رقمي', 'Store Dashboard', 'Digital product design'],
-  ['mabroukui-8.png', 'إدارة المشاريع', 'تجربة متابعة المشاريع', 'Project Management', 'Project tracking experience'],
-  ['mabroukui-3.png', 'نظام الموارد البشرية', 'لوحة تحكم للموظفين', 'HR Management System', 'Employee dashboard'],
-  ['mabroukui-9.png', 'تطبيق الاتحاد السعودي للاكروس', 'تجربة رياضية', 'Saudi Lacrosse Federation', 'Sports app experience'],
-  ['mabroukui-10.png', 'تطبيق الملف الشخصي', 'تجربة تواصل ومشاركة', 'Profile App', 'Social sharing experience'],
-  ['mabroukui-11.png', 'تطبيق The 6 Talk', 'تصميم تجربة للهواتف', 'The 6 Talk', 'Mobile app experience'],
-  ['mabroukui.png', 'منصتي التعليمية', 'موقع وتطبيق تعليمي', 'My Learning Platform', 'Educational website and app'],
-  ['mabroukui-1.png', 'جمعية طريق السلام', 'موقع جمعية', 'Path of Peace Association', 'Nonprofit website'],
-  ['mabroukui-2.png', 'ميدان التخزين', 'موقع وتطبيق خدمات', 'Midan Storage', 'Service website and app'],
-  ['mabroukui-4.png', 'شركة البناء الحديثة', 'موقع شركة', 'Modern Construction Company', 'Corporate website'],
+  ['mabroukui-6.webp', 'تطبيق السيارات', 'تجربة تطبيق للبحث عن السيارات', 'Car Marketplace App', 'Mobile car shopping experience'],
+  ['mabroukui-7.webp', 'تطبيق تحويل الأموال', 'تجربة مالية للهواتف', 'Money Transfer App', 'Mobile finance experience'],
+  ['mabroukui-5.webp', 'لوحة إدارة المتجر', 'تصميم منتج رقمي', 'Store Dashboard', 'Digital product design'],
+  ['mabroukui-8.webp', 'إدارة المشاريع', 'تجربة متابعة المشاريع', 'Project Management', 'Project tracking experience'],
+  ['mabroukui-3.webp', 'نظام الموارد البشرية', 'لوحة تحكم للموظفين', 'HR Management System', 'Employee dashboard'],
+  ['mabroukui-9.webp', 'تطبيق الاتحاد السعودي للاكروس', 'تجربة رياضية', 'Saudi Lacrosse Federation', 'Sports app experience'],
+  ['mabroukui-10.webp', 'تطبيق الملف الشخصي', 'تجربة تواصل ومشاركة', 'Profile App', 'Social sharing experience'],
+  ['mabroukui-11.webp', 'تطبيق The 6 Talk', 'تصميم تجربة للهواتف', 'The 6 Talk', 'Mobile app experience'],
+  ['mabroukui.webp', 'منصتي التعليمية', 'موقع وتطبيق تعليمي', 'My Learning Platform', 'Educational website and app'],
+  ['mabroukui-1.webp', 'جمعية طريق السلام', 'موقع جمعية', 'Path of Peace Association', 'Nonprofit website'],
+  ['mabroukui-2.webp', 'ميدان التخزين', 'موقع وتطبيق خدمات', 'Midan Storage', 'Service website and app'],
+  ['mabroukui-4.webp', 'شركة البناء الحديثة', 'موقع شركة', 'Modern Construction Company', 'Corporate website'],
 ];
 
 const projectList = document.querySelector('#projectList');
@@ -20,8 +20,8 @@ projectFiles.forEach(([file, title, category], index) => {
   const img = document.createElement('img');
   img.src = `assets/projects/${file}`;
   img.alt = title;
-  img.width = 3200;
-  img.height = 2400;
+  img.width = 1200;
+  img.height = 900;
   img.loading = index < 2 ? 'eager' : 'lazy';
   img.decoding = 'async';
   const caption = document.createElement('figcaption');
