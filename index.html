@@ -179,6 +179,18 @@
     <button class="mobile-tab" data-tab="experience" type="button" aria-selected="false"><span class="mobile-tab-icon" aria-hidden="true"><img class="icon-outline" src="assets/icons/mobile-nav/briefcase-outline.svg" alt=""><img class="icon-filled" src="assets/icons/mobile-nav/briefcase-filled.svg" alt=""></span><span>الخبرات</span></button>
     <button class="mobile-tab is-active" data-tab="work" type="button" aria-selected="true"><span class="mobile-tab-icon" aria-hidden="true"><img class="icon-outline" src="assets/icons/mobile-nav/work-outline.svg" alt=""><img class="icon-filled" src="assets/icons/mobile-nav/work-filled.svg" alt=""></span><span>معرض الأعمال</span></button>
   </nav>
+  <dialog class="project-modal" id="projectModal" aria-labelledby="projectModalTitle" aria-describedby="projectModalDescription">
+    <div class="project-modal-header">
+      <div class="project-modal-copy">
+        <h2 id="projectModalTitle"></h2>
+        <p id="projectModalDescription"></p>
+      </div>
+      <button class="project-modal-close" id="projectModalClose" type="button" aria-label="إغلاق العرض">×</button>
+    </div>
+    <div class="project-zoom-viewport" id="projectZoomViewport">
+      <img id="projectModalImage" alt="" width="1200" height="900">
+    </div>
+  </dialog>
   <div class="smooth-follower" id="smoothFollower" aria-hidden="true">
     <span class="smooth-follower-dot"></span>
     <span class="smooth-follower-ring"></span>

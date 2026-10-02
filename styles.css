@@ -449,3 +449,31 @@ html.english .mobile-nav{direction:rtl}
 /* Static portrait: keep the supplied cutout intact at every viewport size. */
 .portrait-box{pointer-events:none}
 .portrait-box img{width:auto;height:105%;max-width:100%;max-height:none;object-fit:contain;object-position:center bottom;transform:translateY(5%);filter:none;mask-image:none;user-select:none}
+
+/* Full-screen project viewer. */
+.project-card .project-open{position:absolute;inset:0;z-index:2;width:100%;height:100%;padding:0;border:0;border-radius:inherit;background:transparent;cursor:zoom-in}
+.project-card .project-open:focus-visible{outline:3px solid #698fff;outline-offset:-6px}
+.project-card:focus-within figcaption{opacity:1}
+body.project-modal-open{overflow:hidden}
+.project-modal{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;border-radius:0;background:#070a1047;color:#fff;overflow:hidden;backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);font-family:Ping,Arial,sans-serif}
+.project-modal:not([open]){display:none}
+.project-modal[open]{display:block}
+.project-modal::backdrop{background:#070a164d;backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px)}
+.project-modal-header{position:absolute;inset:0 0 auto;z-index:3;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding:clamp(20px,3vw,42px);background:linear-gradient(#000c,transparent);pointer-events:none}
+.project-modal-copy{min-width:0;max-width:min(70ch,calc(100% - 72px));text-shadow:0 2px 8px #0009}
+.project-modal-copy h2{margin:0 0 7px;font:700 clamp(24px,3vw,40px)/1.2 Thmanyah,Ping,serif}
+.project-modal-copy p{margin:0;color:#e7e9ed;font-size:clamp(13px,1.25vw,17px);line-height:1.5}
+.project-modal-close{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #ffffff75;border-radius:50%;background:#16191dba;color:#fff;font:32px/1 Arial,sans-serif;cursor:pointer;pointer-events:auto}
+.project-modal-close:hover{background:#353b43}
+.project-modal-close:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.project-zoom-viewport{position:absolute;inset:0;overflow:hidden;display:grid;place-items:center;touch-action:none;cursor:grab}
+.project-zoom-viewport.is-dragging{cursor:grabbing}
+.project-zoom-viewport img{display:block;width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;transform-origin:center center;will-change:transform;pointer-events:none;user-select:none;-webkit-user-drag:none}
+html.english .project-modal{font-family:GoogleSans,Arial,sans-serif}
+html.english .project-modal-copy h2{font-family:Thmanyah,GoogleSans,serif}
+@media(max-width:550px){
+  .project-modal-header{gap:12px;padding:18px 16px}
+  .project-modal-copy h2{font-size:22px}
+  .project-modal-copy p{font-size:12px}
+  .project-modal-close{width:38px;height:38px;font-size:28px}
+}

@@ -30,8 +30,132 @@ projectFiles.forEach(([file, title, category], index) => {
   const detail = document.createElement('span');
   detail.textContent = category;
   caption.append(heading, detail);
-  card.append(img, caption);
+  const openButton = document.createElement('button');
+  openButton.className = 'project-open';
+  openButton.type = 'button';
+  openButton.setAttribute('aria-haspopup', 'dialog');
+  openButton.setAttribute('aria-label', `عرض مشروع ${title}`);
+  openButton.addEventListener('click', () => openProject(index));
+  card.append(img, caption, openButton);
   projectList.append(card);
+});
+
+const projectModal = document.querySelector('#projectModal');
+const modalTitle = document.querySelector('#projectModalTitle');
+const modalDescription = document.querySelector('#projectModalDescription');
+const modalImage = document.querySelector('#projectModalImage');
+const zoomViewport = document.querySelector('#projectZoomViewport');
+let activeProject = -1;
+let previousFocus = null;
+let zoom = 1;
+let panX = 0;
+let panY = 0;
+const pointers = new Map();
+let pinchDistance = 0;
+let pinchCenter = null;
+
+function renderProjectTransform() {
+  modalImage.style.transform = `translate3d(${panX}px, ${panY}px, 0) scale(${zoom})`;
+}
+
+function resetProjectView() {
+  zoom = 1;
+  panX = 0;
+  panY = 0;
+  renderProjectTransform();
+}
+
+function setProjectZoom(value, clientX, clientY) {
+  const nextZoom = Math.min(5, Math.max(0.5, value));
+  const rect = zoomViewport.getBoundingClientRect();
+  const anchorX = (clientX ?? rect.left + rect.width / 2) - rect.left - rect.width / 2;
+  const anchorY = (clientY ?? rect.top + rect.height / 2) - rect.top - rect.height / 2;
+  const ratio = nextZoom / zoom;
+  panX = anchorX - (anchorX - panX) * ratio;
+  panY = anchorY - (anchorY - panY) * ratio;
+  zoom = nextZoom;
+  renderProjectTransform();
+}
+
+function renderActiveProject() {
+  if (activeProject < 0) return;
+  const [file, titleAr, descriptionAr, titleEn, descriptionEn] = projectFiles[activeProject];
+  const title = english ? titleEn : titleAr;
+  modalTitle.textContent = title;
+  modalDescription.textContent = english ? descriptionEn : descriptionAr;
+  modalImage.src = `assets/projects/${file}`;
+  modalImage.alt = title;
+  projectModal.dir = english ? 'ltr' : 'rtl';
+}
+
+function openProject(index) {
+  activeProject = index;
+  previousFocus = document.activeElement;
+  renderActiveProject();
+  projectModal.showModal();
+  document.body.classList.add('project-modal-open');
+  resetProjectView();
+  document.querySelector('#projectModalClose').focus();
+}
+
+projectModal.addEventListener('close', () => {
+  document.body.classList.remove('project-modal-open');
+  activeProject = -1;
+  pointers.clear();
+  previousFocus?.focus();
+});
+document.querySelector('#projectModalClose').addEventListener('click', () => projectModal.close());
+zoomViewport.addEventListener('wheel', event => {
+  event.preventDefault();
+  setProjectZoom(zoom * Math.exp(-event.deltaY * 0.0015), event.clientX, event.clientY);
+}, { passive: false });
+zoomViewport.addEventListener('pointerdown', event => {
+  if (event.button !== 0 && event.pointerType === 'mouse') return;
+  zoomViewport.setPointerCapture(event.pointerId);
+  pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+  zoomViewport.classList.add('is-dragging');
+  if (pointers.size === 2) {
+    const [a, b] = [...pointers.values()];
+    pinchDistance = Math.hypot(a.x - b.x, a.y - b.y);
+    pinchCenter = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+  }
+});
+zoomViewport.addEventListener('pointermove', event => {
+  const previous = pointers.get(event.pointerId);
+  if (!previous) return;
+  pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+  if (pointers.size === 2) {
+    const [a, b] = [...pointers.values()];
+    const distance = Math.hypot(a.x - b.x, a.y - b.y);
+    const center = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+    if (pinchCenter) {
+      panX += center.x - pinchCenter.x;
+      panY += center.y - pinchCenter.y;
+    }
+    if (pinchDistance > 0) setProjectZoom(zoom * distance / pinchDistance, center.x, center.y);
+    pinchDistance = distance;
+    pinchCenter = center;
+  } else {
+    panX += event.clientX - previous.x;
+    panY += event.clientY - previous.y;
+    renderProjectTransform();
+  }
+});
+function endProjectDrag(event) {
+  pointers.delete(event.pointerId);
+  if (zoomViewport.hasPointerCapture(event.pointerId)) zoomViewport.releasePointerCapture(event.pointerId);
+  if (pointers.size < 2) {
+    pinchDistance = 0;
+    pinchCenter = null;
+  }
+  if (pointers.size === 0) zoomViewport.classList.remove('is-dragging');
+}
+zoomViewport.addEventListener('pointerup', endProjectDrag);
+zoomViewport.addEventListener('pointercancel', endProjectDrag);
+zoomViewport.addEventListener('dblclick', resetProjectView);
+modalImage.addEventListener('dragstart', event => event.preventDefault());
+window.addEventListener('resize', () => {
+  if (projectModal.open) resetProjectView();
 });
 
 const portrait = document.querySelector('#portraitImage');
@@ -166,7 +290,10 @@ function setLanguage(nextLanguage) {
     card.querySelector('img').alt = english ? englishTitle : arabicTitle;
     card.querySelector('figcaption strong').textContent = english ? englishTitle : arabicTitle;
     card.querySelector('figcaption span').textContent = english ? englishCategory : arabicCategory;
+    card.querySelector('.project-open').setAttribute('aria-label', english ? `View project ${englishTitle}` : `عرض مشروع ${arabicTitle}`);
   });
+  document.querySelector('#projectModalClose').setAttribute('aria-label', english ? 'Close project' : 'إغلاق العرض');
+  renderActiveProject();
   updateMobileHeader();
 }
 document.querySelector('#languageButton').addEventListener('click', () => {
