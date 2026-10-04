@@ -253,12 +253,6 @@ function setLanguage(nextLanguage) {
   document.documentElement.lang = nextLanguage;
   document.documentElement.dir = english ? 'ltr' : 'rtl';
   document.documentElement.classList.toggle('english', english);
-  document.title = english ? 'Mabroukui — Ahmed Mabrouk' : 'Mabroukui — أحمد مبروك';
-  document.querySelector('meta[name="description"]').content = english
-    ? 'Mabroukui — Portfolio of Ahmed Mabrouk, UI/UX and Product Designer.'
-    : 'Mabroukui — معرض أعمال أحمد مبروك، مصمم واجهات وتجربة المستخدم.';
-  document.querySelector('meta[property="og:title"]').content = document.title;
-  document.querySelector('meta[property="og:description"]').content = document.querySelector('meta[name="description"]').content;
   tabs.forEach(tab => { (tab.querySelector('span:last-child') || tab).textContent = t[tab.dataset.tab]; });
   document.querySelector('#availabilityText').textContent = t.available;
   document.querySelector('#profileName').textContent = t.name;
