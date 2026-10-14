@@ -139,7 +139,7 @@
 .socials a:last-child{border-right:0}
 .socials a:hover{background:#e5e7ee}
 .socials a img{width:18px;height:18px;opacity:.74}
-.email-link img,.socials img{opacity:1;filter:brightness(.66)}
+.email-link img,.socials a img{opacity:1;filter:brightness(.66)}
 .contact-corner{position:absolute;width:10px;height:10px;z-index:2;pointer-events:none;color:#c5c8cf}
 .contact-corner.top-left{top:-2px;left:-2px;border-top:2px solid;border-left:2px solid}
 .contact-corner.top-right{top:-2px;right:-2px;border-top:2px solid;border-right:2px solid}
