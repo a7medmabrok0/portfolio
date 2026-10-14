@@ -260,7 +260,7 @@ function setLanguage(nextLanguage) {
   document.querySelector('#profileRole').textContent = t.role;
   document.querySelector('#profileLede').textContent = t.lede;
   document.querySelector('#yearsLabel').textContent = t.years;
-  document.querySelector('.stats div:first-child strong').textContent = english ? '+5y' : '+5';
+  document.querySelector('.stats div:first-child strong').textContent = english ? '+5Y' : '+5';
   document.querySelector('#projectsLabel').textContent = t.projects;
   document.querySelector('#sectorsLabel').textContent = t.sectors;
   document.querySelector('#messageLink').textContent = t.message;

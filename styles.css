@@ -58,7 +58,7 @@
 .site-shell{position:relative;width:calc(100% - var(--side-space) - var(--side-space));max-width:1440px}
 .profile-panel{background:var(--surface)}
 .portrait-box{background:var(--surface)}
-.portrait-box::before{inset:0;background:url('assets/profile-cover.png') center top/100% 100% no-repeat;opacity:1;z-index:0}
+.portrait-box::before{inset:0;background:url('assets/profile-cover.png') center center/auto 100% no-repeat;opacity:1;z-index:0}
 .portrait-box img{position:relative;z-index:1;mask-image:linear-gradient(#000 0 60%,transparent 90%)}
 .nav-tab,.stats,.profile-actions{font-family:Thmanyah,Ping,serif}
 .stats{direction:rtl}
@@ -477,6 +477,13 @@ html.smooth-follower-enabled .project-zoom-viewport.is-dragging{cursor:grabbing!
 html.smooth-follower-enabled .project-modal-close{cursor:pointer!important}
 html.english .project-modal{font-family:GoogleSans,Arial,sans-serif}
 html.english .project-modal-copy h2{font-family:Thmanyah,GoogleSans,serif}
+/* Keep every English text element on the supplied Google Sans font. */
+html.english body,html.english body *{font-family:GoogleSans,Arial,sans-serif!important}
+html.english .language-button{font-family:Thmanyah,Ping,serif!important}
+@media(min-width:551px) and (max-width:1023px){
+  html.english .content-grid{grid-template-columns:minmax(0,60%) minmax(0,40%)}
+  html.english .profile-panel>.availability{left:calc(80% - 102px)}
+}
 @media(max-width:550px){
   .project-modal-header{gap:12px;padding:18px 16px}
   .project-modal-copy h2{font-size:22px}
