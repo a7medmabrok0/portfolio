@@ -195,9 +195,44 @@ mobileLayout.addEventListener('change', updateMobileHeader);
 updateMobileHeader();
 let english = false;
 const translations = {
-  ar: { about: 'عنــي', experience: 'الخبرات', work: 'معرض الأعمال', available: 'متاح للعمل', name: 'أحمد مبروك', role: 'مصمم واجهة المستخدم', lede: 'متخصص في تصميم المنتجات الرقمية المعقدة وواسعة النطاق. أركز على بناء أنظمة متكاملة وقابلة للتوسع، وتنظيم المنتجات كثيفة البيانات، مع تحقيق التوازن بين احتياجات المستخدم وأهداف المنتج وقابلية التنفيذ.', years: 'سنوات خبرة', projects: 'مشروع', sectors: 'قطاع', message: 'إرسال رسالة', cv: 'تنزيل السيرة الذاتية' },
-  en: { about: 'About Me', experience: 'Experience', work: 'Portfolio', available: 'Available for work', name: 'Ahmed Mabrouk', role: 'User Interface Designer', lede: 'Specializing in the design of complex and large-scale digital products, I focus on building integrated and scalable systems, organizing data-intensive products, while balancing user needs, product goals, and feasibility.', years: 'Experience', projects: 'Projects', sectors: 'Industry', message: 'Send Message', cv: 'Download CV' },
+  ar: { about: 'عنــي', experience: 'الخبرات', work: 'معرض الأعمال', available: 'متاح للعمل', name: 'أحمد مبروك', role: 'مصمم واجهة المستخدم', lede: 'متخصص في تصميم المنتجات الرقمية المعقدة وواسعة النطاق. أركز على بناء أنظمة متكاملة وقابلة للتوسع، وتنظيم المنتجات كثيفة البيانات، مع تحقيق التوازن بين احتياجات المستخدم وأهداف المنتج وقابلية التنفيذ.', years: 'سنوات خبرة', projects: 'مشروع', sectors: 'قطاع', message: 'إرسال رسالة', cv: 'تنزيل السيرة الذاتية', tickerWelcome: 'أهلًا بك في معرض أعمال أحمد مبروك', tickerNotice: 'المشاريع المعروضة قديمة ومن عام 2023، والمشاريع الأحدث قيد الرفع' },
+  en: { about: 'About Me', experience: 'Experience', work: 'Portfolio', available: 'Available for work', name: 'Ahmed Mabrouk', role: 'User Interface Designer', lede: 'Specializing in the design of complex and large-scale digital products, I focus on building integrated and scalable systems, organizing data-intensive products, while balancing user needs, product goals, and feasibility.', years: 'Experience', projects: 'Projects', sectors: 'Industry', message: 'Send Message', cv: 'Download CV', tickerWelcome: 'Welcome to Ahmed Mabrouk’s portfolio', tickerNotice: 'These projects are older work from 2023. Newer projects are being uploaded' },
 };
+
+const ticker = document.querySelector('#constructionTicker');
+const tickerTrack = ticker.querySelector('.construction-ticker-track');
+function renderTicker(t) {
+  const chunk = document.createElement('span');
+  chunk.className = 'construction-ticker-chunk';
+  const welcome = document.createElement('span');
+  welcome.className = 'ticker-welcome';
+  welcome.textContent = t.tickerWelcome;
+  const notice = document.createElement('span');
+  notice.className = 'ticker-notice';
+  notice.textContent = t.tickerNotice;
+  const separatorA = document.createElement('span');
+  separatorA.className = 'ticker-separator';
+  separatorA.textContent = '✦';
+  const separatorB = separatorA.cloneNode(true);
+  chunk.append(welcome, separatorA, notice, separatorB);
+  const group = document.createElement('div');
+  group.className = 'construction-ticker-group';
+  group.append(chunk);
+  tickerTrack.replaceChildren(group);
+  const chunkWidth = Math.max(1, chunk.getBoundingClientRect().width);
+  const copies = Math.ceil((window.innerWidth + chunkWidth) / chunkWidth);
+  for (let i = 1; i < copies; i += 1) group.append(chunk.cloneNode(true));
+  const distance = group.scrollWidth;
+  tickerTrack.style.setProperty('--ticker-offset', `-${distance}px`);
+  tickerTrack.style.setProperty('--ticker-duration', `${distance / 80}s`);
+  const duplicate = group.cloneNode(true);
+  duplicate.setAttribute('aria-hidden', 'true');
+  tickerTrack.append(duplicate);
+  ticker.setAttribute('aria-label', `${t.tickerWelcome}. ${t.tickerNotice}.`);
+}
+renderTicker(translations.ar);
+window.addEventListener('resize', () => renderTicker(translations[english ? 'en' : 'ar']));
+document.fonts?.ready.then(() => renderTicker(translations[english ? 'en' : 'ar']));
 
 const englishContent = {
   '#experiencePanel h2': 'Experience',
@@ -265,6 +300,7 @@ function setLanguage(nextLanguage) {
   document.querySelector('#sectorsLabel').textContent = t.sectors;
   document.querySelector('#messageLink').textContent = t.message;
   document.querySelector('#cvButton').innerHTML = `${t.cv} <img src="assets/icons/download-02.svg" width="16" height="16" alt="" aria-hidden="true">`;
+  renderTicker(t);
   document.querySelector('#languageButton').textContent = english ? 'العربية' : 'English';
   document.querySelector('#languageButton').setAttribute('aria-label', english ? 'Switch to Arabic' : 'Switch to English');
   document.querySelector('.main-nav').setAttribute('aria-label', english ? 'Main navigation' : 'التنقل الرئيسي');

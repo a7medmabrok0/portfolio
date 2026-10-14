@@ -124,7 +124,7 @@
 .topbar{background:transparent;backdrop-filter:none}
 
 .tool-button{background:var(--surface)}
-.profile-heading p{padding-top:8px}
+.profile-heading p{padding-top:8px;font-weight:600}
 .work-panel::before,.work-panel::after{height:110px;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:none}
 .profile-panel>.availability{position:absolute;z-index:6;top:-64px;right:50%;transform:translateX(50%);width:204px;min-width:0;height:57px;margin:0;padding:0 0 7px;border-radius:0;box-shadow:none;background:url('assets/icons/availability-ref.svg') center top/204px 57px no-repeat;color:#fff;display:flex;align-items:center;justify-content:center;gap:6px;direction:rtl;font:13px Thmanyah,Ping,serif;white-space:nowrap}
 .profile-panel>.availability .status-dot{width:7px;height:7px}
@@ -501,3 +501,23 @@ html.english .language-button{font-family:Thmanyah,Ping,serif!important}
   .project-modal-copy p{font-size:12px}
   .project-modal-close{width:38px;height:38px;font-size:28px}
 }
+
+/* Construction-style notice, anchored below the portfolio content. */
+:root{--ticker-height:36px}
+.construction-ticker{position:fixed;inset:auto 0 0;z-index:45;height:var(--ticker-height);overflow:hidden;direction:ltr;border-top:2px solid #151515;border-bottom:2px solid #151515;background:repeating-linear-gradient(135deg,#171717 0 12px,#f7d53b 12px 24px);color:#151515;pointer-events:none}
+.construction-ticker::before{content:'';position:absolute;inset:3px 0;background:#f7d53b}
+.construction-ticker-track{position:absolute;top:0;left:0;display:flex;width:max-content;height:100%;align-items:center;direction:ltr;animation:ticker-scroll-left var(--ticker-duration,25s) linear infinite}
+html[lang="ar"] .construction-ticker-track{animation-name:ticker-scroll-right}
+.construction-ticker-group{display:flex;flex:none;align-items:center;white-space:nowrap;font-size:13px;font-weight:700;line-height:1}
+.construction-ticker-chunk{display:flex;flex:none;align-items:center;gap:24px;padding:0 12px;white-space:nowrap}
+.ticker-welcome,.ticker-notice{unicode-bidi:plaintext}
+.ticker-separator{font-size:15px}
+@keyframes ticker-scroll-left{from{transform:translateX(0)}to{transform:translateX(var(--ticker-offset,0px))}}
+@keyframes ticker-scroll-right{from{transform:translateX(var(--ticker-offset,0px))}to{transform:translateX(0)}}
+@media(min-width:1024px){.content-grid{height:calc(100vh - var(--header-h) - var(--ticker-height))}}
+@media(min-width:551px) and (max-width:1023px){body{padding-bottom:var(--ticker-height)}}
+@media(max-width:550px){
+  .mobile-nav{bottom:max(20px,calc(env(safe-area-inset-bottom) + var(--ticker-height) + 12px))}
+  .contact-area{margin-bottom:calc(106px + var(--ticker-height) + env(safe-area-inset-bottom))}
+}
+@media(prefers-reduced-motion:reduce){.construction-ticker-track{animation:none}}
