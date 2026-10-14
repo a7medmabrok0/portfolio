@@ -91,14 +91,14 @@
   .junction-top-left{top:var(--header-h);left:0}
   .junction-top-middle{top:var(--header-h);right:29%}
   .junction-top-right{top:var(--header-h);right:0}
-  .junction-top-left::before,.junction-top-middle::before,.junction-top-right::before{width:28px;height:2px;transform:translate(-50%,-50%)}
-  .junction-top-left::after,.junction-top-middle::after,.junction-top-right::after{width:2px;height:28px;transform:translate(-50%,-50%)}
+  .junction-top-left::before,.junction-top-middle::before,.junction-top-right::before{width:20px;height:2px;transform:translate(-50%,-50%)}
+  .junction-top-left::after,.junction-top-middle::after,.junction-top-right::after{width:2px;height:20px;transform:translate(-50%,-50%)}
   .junction-portrait-left,.junction-portrait-right{top:calc(var(--header-h) + var(--portrait-h))}
   .junction-portrait-left{right:29%}
   .junction-portrait-right{right:0}
-  .junction-portrait-left::before,.junction-portrait-right::before{width:2px;height:26px;transform:translate(-50%,-50%)}
-  .junction-portrait-left::after{width:14px;height:2px;left:auto;right:0;transform:translateY(-50%)}
-  .junction-portrait-right::after{width:14px;height:2px;right:auto;transform:translateY(-50%)}
+  .junction-portrait-left::before,.junction-portrait-right::before{width:2px;height:20px;transform:translate(-50%,-50%)}
+  .junction-portrait-left::after{width:10px;height:2px;left:auto;right:0;transform:translateY(-50%)}
+  .junction-portrait-right::after{width:10px;height:2px;right:auto;transform:translateY(-50%)}
 }
 @media(max-width:1023px){
   .site-shell{width:100%;border:0}
@@ -139,7 +139,7 @@
 .socials a:last-child{border-right:0}
 .socials a:hover{background:#e5e7ee}
 .socials a img{width:18px;height:18px;opacity:.74}
-.contact-corner{position:absolute;width:15px;height:15px;z-index:2;pointer-events:none;color:#c5c8cf}
+.contact-corner{position:absolute;width:10px;height:10px;z-index:2;pointer-events:none;color:#c5c8cf}
 .contact-corner.top-left{top:-2px;left:-2px;border-top:2px solid;border-left:2px solid}
 .contact-corner.top-right{top:-2px;right:-2px;border-top:2px solid;border-right:2px solid}
 .contact-corner.bottom-left{bottom:-2px;left:-2px;border-bottom:2px solid;border-left:2px solid}
@@ -228,8 +228,8 @@
   .topbar::after{content:'';position:absolute;bottom:-.5px;left:-25px;right:-25px;height:1px;background:var(--line);pointer-events:none}
   .junction{display:block;position:fixed;width:0;height:0;z-index:31;pointer-events:none;color:#464a50}
   .junction::before,.junction::after{content:'';position:absolute;top:0;left:0;background:currentColor;transform:translate(-50%,-50%)}
-  .junction::before{width:22px;height:2px}
-  .junction::after{width:2px;height:22px}
+  .junction::before{width:16px;height:2px}
+  .junction::after{width:2px;height:16px}
   .junction-top-left{top:52px;left:25px}
   .junction-top-middle{display:none}
   .junction-top-right{top:52px;right:25px}
@@ -244,11 +244,11 @@
   .profile-panel>.availability{position:absolute;top:40px;left:calc(20% - 102px);right:auto;transform:none;z-index:6;margin:0}
   .portrait-box{grid-column:1;grid-row:1;height:auto;min-height:318px;align-self:stretch;border-right:1px solid var(--line);border-bottom:0}
   .portrait-box::after{content:none}
-  .profile-summary::before,.profile-summary::after{content:'';position:absolute;bottom:0;width:22px;height:22px;z-index:8;pointer-events:none}
+  .profile-summary::before,.profile-summary::after{content:'';position:absolute;bottom:0;width:16px;height:16px;z-index:8;pointer-events:none}
   .portrait-box img{width:88%;max-width:340px;max-height:none;transform:translateY(26px)}
   .profile-summary{grid-column:2;grid-row:1;position:relative;direction:rtl;text-align:right;padding:20px 24px 18px;border-bottom:0;background:var(--surface)}
-  .profile-summary::before{left:0;transform:translate(-50%,50%);background:linear-gradient(#464a50,#464a50) center/22px 2px no-repeat,linear-gradient(#464a50,#464a50) center top/2px 11px no-repeat}
-  .profile-summary::after{right:0;transform:translate(50%,50%);background:linear-gradient(#464a50,#464a50) center/22px 2px no-repeat,linear-gradient(#464a50,#464a50) center/2px 22px no-repeat}
+  .profile-summary::before{left:0;transform:translate(-50%,50%);background:linear-gradient(#464a50,#464a50) center/16px 2px no-repeat,linear-gradient(#464a50,#464a50) center top/2px 8px no-repeat}
+  .profile-summary::after{right:0;transform:translate(50%,50%);background:linear-gradient(#464a50,#464a50) center/16px 2px no-repeat,linear-gradient(#464a50,#464a50) center/2px 16px no-repeat}
   .profile-heading h1{font-size:27px}
   .profile-heading p{font-size:15px}
   .profile-lede{max-width:none;font-size:14px;line-height:1.5;margin:18px 0 14px}
@@ -259,7 +259,7 @@
   .primary-action,.secondary-action{min-height:42px;font-size:12px}
   .main-panel{grid-column:1/-1;grid-row:2;min-height:0;overflow:visible;direction:rtl}
   .main-panel::before{content:'';display:block;position:absolute;top:-.5px;left:-25px;right:-25px;height:1px;background:var(--line);z-index:4;pointer-events:none}
-  .main-panel::after{content:'';display:block;position:absolute;top:0;left:0;width:22px;height:22px;transform:translate(-50%,-50%);z-index:12;pointer-events:none;background:linear-gradient(#464a50,#464a50) center/22px 2px no-repeat,linear-gradient(#464a50,#464a50) center/2px 22px no-repeat}
+  .main-panel::after{content:'';display:block;position:absolute;top:0;left:0;width:16px;height:16px;transform:translate(-50%,-50%);z-index:12;pointer-events:none;background:linear-gradient(#464a50,#464a50) center/16px 2px no-repeat,linear-gradient(#464a50,#464a50) center/2px 16px no-repeat}
   .tab-panel,.work-panel{height:auto;overflow:visible}
   .work-scroll,.info-scroll{height:auto;overflow:visible}
   .work-panel::before,.work-panel::after{content:'';display:block;position:sticky;left:auto;right:auto;width:100%;height:80px;z-index:5;pointer-events:none;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
@@ -270,15 +270,15 @@
   .project-card img{width:100%;height:auto;object-fit:contain}
   .contact-area{grid-column:1/-1;grid-row:3;display:grid;grid-template-columns:1fr 1fr;direction:ltr;align-self:start;margin:40px 24px 28px;padding:0}
   .contact-area::before{content:'';position:absolute;top:-40.5px;left:-49px;right:-49px;height:1px;background:var(--line);pointer-events:none}
-  .tablet-footer-junction{display:block;position:absolute;top:-40px;width:22px;height:22px;z-index:8;pointer-events:none;background:linear-gradient(#464a50,#464a50) center/22px 2px no-repeat,linear-gradient(#464a50,#464a50) center/2px 22px no-repeat}
+  .tablet-footer-junction{display:block;position:absolute;top:-40px;width:16px;height:16px;z-index:8;pointer-events:none;background:linear-gradient(#464a50,#464a50) center/16px 2px no-repeat,linear-gradient(#464a50,#464a50) center/2px 16px no-repeat}
   .tablet-footer-junction-left{left:-24px;transform:translate(-50%,-50%)}
   .tablet-footer-junction-right{right:-24px;transform:translate(50%,-50%)}
   .email-link{min-height:52px;border-bottom:0;border-right:1px solid var(--line);font-size:14px}
   .socials{position:relative;height:52px}
-  .socials::before,.socials::after{content:'';position:absolute;left:0;width:22px;height:22px;z-index:2;pointer-events:none}
-  .socials::before{top:0;transform:translate(-50%,-50%);background:linear-gradient(#c5c8cf,#c5c8cf) center/22px 2px no-repeat,linear-gradient(#c5c8cf,#c5c8cf) center bottom/2px 11px no-repeat}
-  .socials::after{bottom:0;transform:translate(-50%,50%);background:linear-gradient(#c5c8cf,#c5c8cf) center/22px 2px no-repeat,linear-gradient(#c5c8cf,#c5c8cf) center top/2px 11px no-repeat}
-  .contact-corner{width:11px;height:11px}
+  .socials::before,.socials::after{content:'';position:absolute;left:0;width:16px;height:16px;z-index:2;pointer-events:none}
+  .socials::before{top:0;transform:translate(-50%,-50%);background:linear-gradient(#c5c8cf,#c5c8cf) center/16px 2px no-repeat,linear-gradient(#c5c8cf,#c5c8cf) center bottom/2px 8px no-repeat}
+  .socials::after{bottom:0;transform:translate(-50%,50%);background:linear-gradient(#c5c8cf,#c5c8cf) center/16px 2px no-repeat,linear-gradient(#c5c8cf,#c5c8cf) center top/2px 8px no-repeat}
+  .contact-corner{width:8px;height:8px}
   .socials a img{width:22px;height:22px}
   .info-inner{padding-bottom:35px}
   .content-grid:not([data-active-tab="work"]){grid-template-columns:minmax(0,1fr)}
