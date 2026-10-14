@@ -58,7 +58,7 @@
 .site-shell{position:relative;width:calc(100% - var(--side-space) - var(--side-space));max-width:1440px}
 .profile-panel{background:var(--surface)}
 .portrait-box{background:var(--surface)}
-.portrait-box::before{inset:0;background:url('assets/profile-cover.png') center top/contain no-repeat;opacity:1;z-index:0}
+.portrait-box::before{inset:0;background:url('assets/profile-cover.png') center top/100% auto no-repeat;opacity:1;z-index:0}
 .portrait-box img{position:relative;z-index:1;mask-image:linear-gradient(#000 0 60%,transparent 90%)}
 .nav-tab,.stats,.profile-actions{font-family:Thmanyah,Ping,serif}
 .stats{direction:rtl}
@@ -490,6 +490,10 @@ html.english .language-button{font-family:Thmanyah,Ping,serif!important}
   html.english #experiencePanel .experience-meta span{direction:ltr;align-self:flex-end;text-align:right}
   html.english #experiencePanel .experience-details h3,
   html.english #experiencePanel .experience-company{grid-column:1;text-align:left}
+}
+@media(max-width:550px){
+  .portrait-box::before{background-size:100% auto}
+  .portrait-box img{height:100%;max-height:none;max-width:88%}
 }
 @media(max-width:550px){
   .project-modal-header{gap:12px;padding:18px 16px}
