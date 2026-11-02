@@ -1,216 +1,735 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="assets/site-icon.png">
-  <link rel="apple-touch-icon" href="assets/site-icon.png">
-  <meta name="description" content="specializing in Enterprise SaaS, ERP Systems, Complex Dashboards, and AI-Powered Products. Focused on Scalable Design Systems, Complex Workflows, Data-Heavy Interfaces, and End-to-End Product Design, balancing User Needs, Business Goals, and Technical Feasibility">
-  <meta name="application-name" content="Mabroukui">
-  <link rel="canonical" href="https://mabroukui.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Mabroukui">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="Ahmed Mabrouk | Senior UI/UX &amp; Product Designer">
-  <meta property="og:description" content="specializing in Enterprise SaaS, ERP Systems, Complex Dashboards, and AI-Powered Products. Focused on Scalable Design Systems, Complex Workflows, Data-Heavy Interfaces, and End-to-End Product Design, balancing User Needs, Business Goals, and Technical Feasibility">
-  <meta property="og:url" content="https://mabroukui.com/">
-  <meta property="og:image" content="https://mabroukui.com/assets/share-cover-en.jpg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Ahmed Mabrouk, Senior UI and Product Designer">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ahmed Mabrouk | Senior UI/UX &amp; Product Designer">
-  <meta name="twitter:description" content="specializing in Enterprise SaaS, ERP Systems, Complex Dashboards, and AI-Powered Products. Focused on Scalable Design Systems, Complex Workflows, Data-Heavy Interfaces, and End-to-End Product Design, balancing User Needs, Business Goals, and Technical Feasibility">
-  <meta name="twitter:image" content="https://mabroukui.com/assets/share-cover-en.jpg">
-  <title>Ahmed Mabrouk | Senior UI/UX &amp; Product Designer</title>
-  <link rel="stylesheet" href="styles.css?v=16">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmed Mabrouk Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<script>(function(){var r=document.documentElement,l='ar';try{l=localStorage.getItem('mabroukui-v2-lang')||'ar'}catch(e){}r.lang=l;r.dir=l==='en'?'ltr':'rtl'})();</script>
+<meta name="description" content="Ahmed Mabrouk — Senior UI/UX & Product Designer specializing in Enterprise SaaS, ERP systems, complex dashboards and AI-powered products.">
+<meta property="og:title" content="Ahmed Mabrouk | Senior UI/UX &amp; Product Designer">
+<meta property="og:description" content="Enterprise SaaS, ERP systems, complex dashboards and AI-powered products.">
+<meta property="og:image" content="https://mabroukui.com/assets/share-cover-en.jpg">
+<link rel="icon" type="image/png" href="assets/site-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Alexandria:wght@800;900&family=Aref+Ruqaa:wght@700&family=Caveat+Brush&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<style>
+@font-face{font-family:Ping;src:url('assets/fonts/alfont_com_PingARLT-Regular.otf') format('opentype');font-weight:400;font-display:swap}
+@font-face{font-family:Ping;src:url('assets/fonts/alfont_com_PingARLT-Medium.otf') format('opentype');font-weight:500;font-display:swap}
+@font-face{font-family:Ping;src:url('assets/fonts/alfont_com_PingARLT-Bold.otf') format('opentype');font-weight:700;font-display:swap}
+
+/* Layout: a cinematic dark scroll — giant poster hero, then full-bleed bands on a 12-col grid, red used only for emphasis words, numbers and the timeline spine. */
+:root{
+  --ink:#07080d;          /* page */
+  --panel:#0e1019;        /* raised bands */
+  --line:#1c1f2e;         /* hairlines */
+  --text:#eef0f6;
+  --muted:#8b90a5;
+  --red:#ec2340;
+  --red-hot:#ff3a55;
+  --red-deep:#5c0a17;
+  --blue:#96b4e6;         /* blueprint lines */
+  --display-en:"Anton","Alexandria",Impact,"Arial Narrow",sans-serif;
+  --display-ar:"Alexandria","Anton",Tahoma,sans-serif;
+  --script-en:"Caveat Brush","Aref Ruqaa",cursive;
+  --script-ar:"Aref Ruqaa","Caveat Brush",serif;
+  --body-ar:Ping,"IBM Plex Sans Arabic",Tahoma,sans-serif;
+  --body-en:"DM Sans",Ping,Arial,sans-serif;
+  --gut:max(16px,env(safe-area-inset-left,0px));
+  --gut-r:max(16px,env(safe-area-inset-right,0px));
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{margin:0;background:var(--ink);color:var(--text);font-family:var(--body-ar);font-size:16px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+html[lang=en] body{font-family:var(--body-en)}
+html[lang=ar] .en,html[lang=en] .ar{display:none!important}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+:focus-visible{outline:2px solid var(--red-hot);outline-offset:3px}
+.wrap{width:min(100%,1320px);margin-inline:auto;padding-left:var(--gut);padding-right:var(--gut-r)}
+.display{font-family:var(--display-ar);font-weight:900;line-height:1.02;letter-spacing:-.01em;text-wrap:balance;margin:0}
+html[lang=en] .display{font-family:var(--display-en);font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:.95}
+.red{color:var(--red)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;align-items:center;margin:0 0 18px}
+.eyebrow b{color:var(--red);font-weight:700}
+html[lang=ar] .eyebrow{letter-spacing:0;font-size:13px}
+.num{font-family:var(--display-en);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+
+/* ---------- header ---------- */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--ink) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.logo{font-family:var(--display-en);font-size:22px;letter-spacing:.02em;display:flex;align-items:center;gap:6px;direction:ltr}
+.logo i{width:8px;height:8px;border-radius:50%;background:var(--red);display:inline-block;box-shadow:0 0 12px var(--red)}
+.nav{display:flex;gap:26px;margin-inline-start:auto;font-size:14px;color:var(--muted)}
+.nav a{transition:color .2s}.nav a:hover{color:var(--text)}
+.top-tools{display:flex;gap:10px;align-items:center}
+.lang{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--muted);transition:border-color .2s,color .2s}
+.lang:hover{border-color:var(--muted);color:var(--text)}
+.talk{font-size:13px;font-weight:700;background:var(--text);color:var(--ink);border-radius:999px;padding:8px 16px;display:inline-flex;gap:6px;align-items:center}
+.talk:hover{background:var(--red);color:#fff}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 70% at 50% 35%,rgba(236,35,64,.18),transparent 70%),radial-gradient(circle at 1px 1px,rgba(255,255,255,.05) 1px,transparent 1.4px) 0 0/28px 28px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,.5fr);align-items:end;min-height:min(820px,calc(100svh - 64px));padding-block:40px 36px;gap:24px}
+.giant{position:absolute;inset-inline:0;top:5%;z-index:-1;text-align:center;font-family:var(--display-en);font-size:clamp(110px,23.5vw,360px);line-height:.82;letter-spacing:-.01em;direction:ltr;white-space:nowrap;
+  background:linear-gradient(180deg,var(--red-hot) 0%,var(--red) 38%,var(--red-deep) 78%,transparent 100%);-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none;pointer-events:none;will-change:transform}
+.portrait{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:min(560px,48vw);z-index:0;pointer-events:none}
+.portrait img{width:100%;height:auto;filter:contrast(1.08) brightness(.95);-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 100%);mask-image:linear-gradient(180deg,#000 72%,transparent 100%)}
+.hero-copy{position:relative;z-index:2;align-self:end;padding-top:clamp(140px,17vw,250px);max-width:420px}
+.hello{font-family:var(--script-ar);font-size:clamp(30px,3.4vw,46px);color:var(--text);line-height:1;margin:0 0 6px;transform:rotate(-4deg);transform-origin:right}
+html[lang=en] .hello{font-family:var(--script-en);transform-origin:left}
+.name{font-size:clamp(48px,6.2vw,92px)}
+.name .dot{color:var(--red)}
+.role{font-family:var(--display-ar);font-weight:800;color:var(--red);font-size:clamp(17px,1.6vw,22px);line-height:1.25;margin:14px 0 16px}
+html[lang=en] .role{font-family:var(--display-en);font-weight:400;text-transform:uppercase;letter-spacing:.02em}
+.lede{color:#c4c8d6;margin:0 0 22px;font-size:15px;max-width:44ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:14px;padding:13px 20px;background:var(--red);color:#fff;border-radius:2px;transition:background .2s,transform .2s}
+.btn:hover{background:var(--red-hot);transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
+.btn.ghost:hover{border-color:var(--text)}
+.loc{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);margin-top:20px}
+.live{width:8px;height:8px;border-radius:50%;background:#2ee08a;box-shadow:0 0 0 0 rgba(46,224,138,.6);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 9px rgba(46,224,138,0)}100%{box-shadow:0 0 0 0 rgba(46,224,138,0)}}
+.stats{grid-column:3;position:relative;z-index:2;display:grid;gap:22px;align-self:end;padding-bottom:60px;justify-items:end}
+html[lang=ar] .stats{justify-items:start}
+.stat{display:grid;grid-template-columns:auto auto;align-items:center;gap:12px}
+.stat strong{direction:ltr;unicode-bidi:isolate;font-family:var(--display-en);font-weight:400;font-size:clamp(40px,4vw,58px);line-height:.9;color:var(--red);font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--muted);line-height:1.35;max-width:9ch}
+.scroll-hint{position:absolute;bottom:22px;inset-inline-start:50%;translate:-50% 0;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px}
+html[dir=rtl] .scroll-hint{translate:50% 0}
+.scroll-hint::after{content:"";width:1px;height:28px;background:linear-gradient(var(--red),transparent);animation:drip 1.8s infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.corner{position:absolute;top:28px;inset-inline-end:var(--gut);font-size:11px;color:var(--muted);text-align:end;line-height:1.5;z-index:3;letter-spacing:.06em;text-transform:uppercase}
+
+/* load sequence */
+.hero .giant{animation:rise 1.2s cubic-bezier(.2,.8,.2,1) both}
+.hero .portrait{animation:fadeUp 1.1s .25s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(60px) scaleY(1.15)}to{opacity:1;transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translate(-50%,30px)}to{opacity:1;transform:translate(-50%,0)}}
+
+/* ---------- sections ---------- */
+section{position:relative}
+.band{padding-block:clamp(64px,8vw,104px);border-bottom:1px solid var(--line)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.sec-head h2{font-size:clamp(34px,4.4vw,60px)}
+.sec-head p{color:var(--muted);max-width:40ch;margin:0;font-size:15px}
+.arrows{display:flex;gap:8px}
+.arrows button{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;transition:border-color .2s,background .2s}
+.arrows button:hover{border-color:var(--red);background:var(--red)}
+html[dir=rtl] .arrows svg{transform:scaleX(-1)}
+
+/* work rail */
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:min(78vw,420px);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:var(--red) var(--line);overscroll-behavior-x:contain}
+.card{scroll-snap-align:start;display:grid;gap:14px;text-align:start}
+.card .shot{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--panel);border:1px solid var(--line)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .4s;filter:saturate(.9)}
+.card:hover img{transform:scale(1.05);filter:saturate(1.1)}
+.card .shot::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(7,8,13,.75));opacity:0;transition:opacity .3s}
+.card:hover .shot::after{opacity:1}
+.card .meta{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:start}
+.card .idx{font-family:var(--display-en);color:var(--red);font-size:30px;line-height:1}
+.card h3{margin:0;font-size:16px;line-height:1.3;font-weight:700}
+.card small{color:var(--muted);font-size:12.5px}
+.card .go{width:30px;height:30px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;transition:.25s}
+.card:hover .go{background:var(--red);border-color:var(--red);transform:rotate(-45deg)}
+html[dir=rtl] .card:hover .go{transform:rotate(45deg) scaleX(-1)}
+html[dir=rtl] .card .go svg{transform:scaleX(-1)}
+
+/* companies marquee */
+.part{padding-block:44px;border-bottom:1px solid var(--line);overflow:hidden}
+.part .wrap{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center}
+.part .label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);line-height:1.6}
+html[lang=ar] .part .label{letter-spacing:0;font-size:13px}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);direction:ltr}
+.track{display:flex;gap:64px;width:max-content;animation:slide 32s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.co{font-family:var(--display-en);font-size:30px;letter-spacing:.03em;color:#cfd2dd;white-space:nowrap;display:flex;align-items:center;gap:64px;opacity:.85}
+.co::after{content:"✦";color:var(--red);font-size:14px}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* impact */
+.impact{background:linear-gradient(180deg,var(--ink),#0b0610 60%,var(--ink))}
+.impact .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:start}
+.impact h2{font-size:clamp(46px,6.4vw,96px)}
+.laurel{display:flex;align-items:center;gap:6px;margin:34px 0 10px;direction:ltr}
+.laurel svg{width:46px;height:84px;color:var(--red)}
+.laurel strong{font-family:var(--display-en);font-weight:400;font-size:clamp(84px,9vw,128px);line-height:.85}
+.laurel strong sup{font-size:.4em;color:var(--red);vertical-align:top}
+.impact .under{font-family:var(--display-en);color:var(--red);letter-spacing:.14em;font-size:13px;margin:0 0 14px}
+.impact p.desc{color:var(--muted);max-width:40ch;margin:0}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.list li{display:grid;grid-template-columns:44px 1fr auto;gap:16px;align-items:center;padding:20px 4px;border-bottom:1px solid var(--line);transition:background .25s,padding .25s}
+.list li:hover{background:linear-gradient(90deg,rgba(236,35,64,.08),transparent);padding-inline-start:14px}
+html[dir=rtl] .list li:hover{background:linear-gradient(-90deg,rgba(236,35,64,.08),transparent)}
+.list .i{font-family:var(--display-en);color:var(--muted);font-size:13px}
+.list h4{margin:0;font-size:17px;line-height:1.3}
+.list small{display:block;color:var(--muted);font-size:13px;font-weight:400}
+.list .tag{font-family:var(--display-en);color:var(--red);font-size:clamp(16px,1.6vw,22px);text-align:end;white-space:nowrap}
+
+/* raw to real */
+.raw .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(28px,5vw,72px);align-items:center}
+.raw h2{font-size:clamp(46px,6vw,92px)}
+.raw p{color:var(--muted);max-width:36ch}
+.compare{position:relative;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--line);background:var(--panel);--pos:52%;touch-action:pan-y;user-select:none;max-width:100%}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.compare .after{clip-path:inset(0 0 0 var(--pos))}
+.compare .handle{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;background:var(--red);translate:-1px 0}
+.compare .knob{position:absolute;top:50%;left:50%;translate:-50% -50%;width:44px;height:44px;border-radius:50%;background:var(--red);display:grid;place-items:center;box-shadow:0 0 0 6px rgba(236,35,64,.25)}
+.compare .tagl,.compare .tagr{position:absolute;top:14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:rgba(7,8,13,.75);padding:5px 10px;border:1px solid var(--line)}
+.compare .tagl{left:14px;color:var(--blue)}.compare .tagr{right:14px}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.compare input:focus-visible + .handle .knob{outline:2px solid #fff;outline-offset:3px}
+
+/* about */
+.about .top-row{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr);gap:40px;align-items:end;margin-bottom:64px}
+.about h2{font-size:clamp(40px,5.2vw,78px)}
+.about .intro{color:#c4c8d6;margin:0;max-width:44ch}
+.about .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,.75fr);gap:clamp(24px,4vw,56px);align-items:start}
+.blk h3{font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 22px;color:var(--text)}
+html[lang=ar] .blk h3{letter-spacing:0;font-size:15px}
+.edu{display:grid;gap:22px}
+.edu div{border-top:1px solid var(--line);padding-top:14px}
+.edu b{display:block;color:var(--red);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.edu p{margin:0;color:#c4c8d6;font-size:14.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chips span{font-size:12.5px;border:1px solid var(--line);padding:6px 11px;border-radius:999px;color:#c4c8d6;direction:ltr}
+.steps{list-style:none;margin:0;padding:0;position:relative}
+.steps::before{content:"";position:absolute;inset-inline-start:48px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--red),var(--line))}
+.steps li{display:grid;grid-template-columns:34px 30px 1fr;gap:0;align-items:start;padding-bottom:26px}
+.steps .n{font-family:var(--display-en);color:var(--red);font-size:20px;line-height:1.2}
+.steps .pin{width:9px;height:9px;border-radius:50%;border:2px solid var(--red);background:var(--ink);margin-top:7px;margin-inline-start:10px;position:relative;z-index:1}
+.steps h4{margin:0 0 4px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+html[lang=ar] .steps h4{letter-spacing:0;font-size:16px}
+.steps p{margin:0;color:var(--muted);font-size:14px}
+.quote{background:linear-gradient(160deg,var(--red),#a70f26);padding:28px 26px 24px;position:relative;overflow:hidden}
+.quote::before{content:"\201C";font-family:Georgia,serif;font-size:90px;line-height:.6;display:block;opacity:.6;margin-bottom:10px}
+.quote p{margin:0 0 22px;font-size:clamp(19px,1.8vw,24px);line-height:1.4;font-weight:500}
+.quote cite{font-family:var(--script-ar);font-style:normal;font-size:26px;opacity:.95}
+html[lang=en] .quote cite{font-family:var(--script-en)}
+
+/* journey */
+.journey .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.7fr);gap:clamp(32px,6vw,80px)}
+.journey h2{font-size:clamp(38px,5vw,74px);margin-bottom:12px}
+.timeline{position:relative;margin-top:44px;border-inline-start:2px solid var(--red)}
+.job{border-bottom:1px solid var(--line)}
+.job>button{width:100%;display:grid;grid-template-columns:150px 1fr 36px;gap:18px;align-items:center;text-align:start;padding:22px 0 22px 22px}
+html[dir=rtl] .job>button{padding:22px 22px 22px 0}
+.job time{font-size:12.5px;color:var(--muted);direction:ltr;text-align:start;font-variant-numeric:tabular-nums;unicode-bidi:plaintext}
+.job h3{margin:0;font-size:clamp(18px,1.8vw,23px);line-height:1.25}
+.job h3 small{display:block;font-size:13.5px;color:var(--muted);font-weight:400;margin-top:2px}
+.plus{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .3s,background .3s,border-color .3s}
+.job[open] .plus,.job.open .plus{transform:rotate(45deg);background:var(--red);border-color:var(--red)}
+.job .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.8,.2,1)}
+.job.open .body{grid-template-rows:1fr}
+.job .body>div{overflow:hidden}
+.job ul{margin:0;padding:0 22px 24px 190px;color:#c4c8d6;font-size:14.5px;display:grid;gap:8px}
+html[dir=rtl] .job ul{padding:0 190px 24px 22px}
+.job li::marker{color:var(--red)}
+.side .tools{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:4px}
+.side .tools span{aspect-ratio:1;border:1px solid var(--line);display:grid;place-items:center;background:var(--panel)}
+.side .tools img{width:46%}
+.side .blk+.blk{margin-top:44px}
+.sectors{list-style:none;margin:0;padding:0;display:grid}
+.sectors li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.sectors li span{color:var(--muted);font-size:12.5px;direction:ltr}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.contact h2{font-size:clamp(48px,6.2vw,96px)}
+.contact .pitch{color:var(--muted);margin:18px 0 26px;max-width:32ch}
+.ways{list-style:none;margin:0;padding:0;display:grid}
+.ways li{border-bottom:1px solid var(--line)}
+.ways a,.ways div.row{display:grid;grid-template-columns:38px 1fr auto;gap:14px;align-items:center;padding:16px 0}
+.ways .ic{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--red)}
+.ways small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+html[lang=ar] .ways small{letter-spacing:0;font-size:12.5px}
+.ways b{font-weight:500;font-size:15px;direction:ltr;display:inline-block;unicode-bidi:isolate}
+.ways .arr{color:var(--muted);transition:transform .25s,color .25s}
+.ways a:hover .arr{color:var(--red);transform:translate(4px,-4px)}
+html[dir=rtl] .ways .arr{transform:scaleX(-1)}
+html[dir=rtl] .ways a:hover .arr{transform:scaleX(-1) translate(4px,-4px)}
+.copy{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:var(--muted)}
+.copy:hover{color:var(--text);border-color:var(--muted)}
+.poster{position:relative;aspect-ratio:4/5;border:1px solid var(--line);background:radial-gradient(80% 60% at 70% 20%,rgba(236,35,64,.22),transparent 70%),var(--panel);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;max-width:100%}
+.poster canvas{position:absolute;inset:0;width:100%;height:100%}
+.poster .display{position:relative;font-size:clamp(40px,4.4vw,64px)}
+.poster .rec{position:absolute;top:18px;inset-inline-start:20px;font-size:11px;letter-spacing:.16em;color:var(--muted);display:flex;gap:8px;align-items:center;text-transform:uppercase}
+.poster .rec i{width:7px;height:7px;border-radius:50%;background:var(--red);animation:blink 1.2s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+
+footer{padding-block:28px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:12.5px}
+
+/* cursor trail */
+#trail{position:fixed;inset:0;pointer-events:none;z-index:80}
+
+/* lightbox */
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);width:100%;color:var(--text)}
+dialog.lb::backdrop{background:rgba(4,5,9,.9);backdrop-filter:blur(6px)}
+.lb figure{margin:0;background:var(--panel);border:1px solid var(--line)}
+.lb img{width:100%;height:auto;max-height:78vh;object-fit:contain;background:#000}
+.lb figcaption{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 18px}
+.lb figcaption b{font-size:17px}.lb figcaption small{display:block;color:var(--muted)}
+.lb .x{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;font-size:20px;flex:none}
+.lb .x:hover{background:var(--red);border-color:var(--red)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .nav{display:none}
+  .top-tools{margin-inline-start:auto}
+  .about .grid{grid-template-columns:1fr 1fr}
+  .about .quote{grid-column:1/-1;max-width:520px}
+  .contact .wrap{grid-template-columns:1fr 1fr}
+  .contact .poster{grid-column:1/-1;aspect-ratio:16/7}
+}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;min-height:auto;padding-block:28px 0;gap:0}
+  .giant{top:2%;font-size:24vw}
+  .portrait{position:relative;left:auto;transform:none;width:min(86vw,440px);margin:6vw auto 0;order:2;animation-name:fadeUpM!important}
+  @keyframes fadeUpM{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+  .hero-copy{padding-top:24vw;order:1;max-width:none}
+  .stats{grid-column:auto;order:3;padding:20px 0 28px;grid-template-columns:repeat(3,1fr);justify-items:start;border-top:1px solid var(--line);margin-top:-1px;background:var(--ink);position:relative}
+  .stat{grid-template-columns:1fr;gap:4px}
+  .scroll-hint,.corner{display:none}
+  .impact .wrap,.raw .wrap,.journey .wrap{grid-template-columns:1fr}
+  .about .top-row{grid-template-columns:1fr;margin-bottom:40px}
+  .about .grid{grid-template-columns:1fr}
+  .part .wrap{grid-template-columns:1fr}
+  .contact .wrap{grid-template-columns:1fr}
+  .contact .poster{aspect-ratio:4/3}
+  .job>button{grid-template-columns:1fr 32px;padding-inline-start:18px!important}
+  .job time{grid-column:1}
+  .job h3{grid-column:1;grid-row:2}
+  .plus{grid-row:1/3;grid-column:2}
+  .job ul{padding:0 18px 22px 36px!important}
+  html[dir=rtl] .job ul{padding:0 36px 22px 18px!important}
+}
+@media (max-width:480px){
+  .talk{display:none}
+  .list li{grid-template-columns:30px 1fr;}
+  .list .tag{grid-column:2;text-align:start;font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
 </head>
 <body>
-  <div class="site-shell">
-    <span class="junction junction-top-left" aria-hidden="true"></span>
-    <span class="junction junction-top-middle" aria-hidden="true"></span>
-    <span class="junction junction-top-right" aria-hidden="true"></span>
-    <span class="junction junction-portrait-left" aria-hidden="true"></span>
-    <span class="junction junction-portrait-right" aria-hidden="true"></span>
-    <header class="topbar">
-      <div class="header-tools" dir="ltr">
-        <button class="tool-button language-button" id="languageButton" type="button" aria-label="Switch to English">English</button>
-      </div>
-      <nav class="main-nav" aria-label="التنقل الرئيسي">
-        <button class="nav-tab" data-tab="about" type="button" aria-selected="false">عنــي</button>
-        <button class="nav-tab" data-tab="experience" type="button" aria-selected="false">الخبرات</button>
-        <button class="nav-tab is-active" data-tab="work" type="button" aria-selected="true">معرض الأعمال</button>
-      </nav>
-      <div class="compact-profile" aria-hidden="true"><span id="compactProfileName">أحمد مبروك</span><img src="assets/compact-profile.png" alt=""></div>
-    </header>
+<canvas id="trail" aria-hidden="true"></canvas>
 
-    <main class="content-grid" data-active-tab="work">
-      <aside class="profile-panel" aria-label="الملف الشخصي">
-        <div class="availability"><span class="status-dot" aria-hidden="true"></span><span id="availabilityText">متاح للعمل</span></div>
-        <div class="portrait-box" id="portraitBox">
-          <img id="portraitImage" src="assets/portrait-static.png" width="720" height="712" alt="بورتريه أحمد مبروك" fetchpriority="high">
-        </div>
-        <div class="profile-content">
-          <div class="profile-summary">
-          <div class="profile-heading"><h1 id="profileName">أحمد مبروك</h1><p id="profileRole">مصمم واجهة المستخدم</p></div>
-          <p class="profile-lede" id="profileLede">متخصص في تصميم المنتجات الرقمية المعقدة وواسعة النطاق. أركز على بناء أنظمة متكاملة وقابلة للتوسع، وتنظيم المنتجات كثيفة البيانات، مع تحقيق التوازن بين احتياجات المستخدم وأهداف المنتج وقابلية التنفيذ.</p>
-          <div class="stats" aria-label="إحصاءات العمل">
-            <div><strong>+5</strong><span id="yearsLabel">سنوات خبرة</span></div>
-            <div><strong>+60</strong><span id="projectsLabel">مشروع</span></div>
-            <div><strong>+16</strong><span id="sectorsLabel">قطاع</span></div>
-          </div>
-          <div class="profile-actions">
-            <a class="primary-action" id="messageLink" href="https://wa.me/201113949916" target="_blank" rel="noopener noreferrer">إرسال رسالة</a>
-            <a class="secondary-action" id="cvButton" href="https://drive.google.com/uc?export=download&amp;id=1cgX7XjNRgQP679iI-yyHkjdh6W9aFECn">تنزيل السيرة الذاتية <img src="assets/icons/download-02.svg" width="16" height="16" alt="" aria-hidden="true"></a>
-          </div>
-          </div>
-          <div class="contact-area">
-            <span class="tablet-footer-junction tablet-footer-junction-left" aria-hidden="true"></span><span class="tablet-footer-junction tablet-footer-junction-right" aria-hidden="true"></span>
-            <span class="contact-corner top-right" aria-hidden="true"></span><span class="contact-corner top-left" aria-hidden="true"></span><span class="contact-corner bottom-right" aria-hidden="true"></span><span class="contact-corner bottom-left" aria-hidden="true"></span>
-            <a class="email-link" href="mailto:ahmed@mabroukui.com"><img src="assets/icons/mail-01.svg" alt="" width="18" height="18"><span>ahmed@mabroukui.com</span></a>
-            <div class="socials" aria-label="روابط التواصل">
-              <a href="https://www.behance.net/a7medmabrok0" target="_blank" rel="noopener noreferrer" aria-label="Behance"><img src="assets/icons/Social Icons.svg" alt=""></a>
-              <a href="https://dribbble.com/a7medmabrok0" target="_blank" rel="noopener noreferrer" aria-label="Dribbble"><img src="assets/icons/Social Icons-1.svg" alt=""></a>
-              <a href="https://www.linkedin.com/in/a7medmabrok0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/icons/Social Icons-2.svg" alt=""></a>
-              <a href="https://x.com/a7medmabrok0" target="_blank" rel="noopener noreferrer" aria-label="X"><img src="assets/icons/Social Icons-3.svg" alt=""></a>
-              <a href="https://www.instagram.com/a7medmabrok0/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/icons/Social Icons-4.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </aside>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="Mabroukui">MABROUK<i></i></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work"><span class="ar">الأعمال</span><span class="en">Work</span></a>
+      <a href="#impact"><span class="ar">الأثر</span><span class="en">Impact</span></a>
+      <a href="#about"><span class="ar">عني</span><span class="en">About</span></a>
+      <a href="#journey"><span class="ar">الرحلة</span><span class="en">Journey</span></a>
+      <a href="#contact"><span class="ar">تواصل</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="top-tools">
+      <button class="lang" id="lang" type="button"><span class="ar">English</span><span class="en">العربية</span></button>
+      <a class="talk" href="#contact"><span class="ar">لنتحدث</span><span class="en">Let's talk</span> ↗</a>
+    </div>
+  </div>
+</header>
 
-      <section class="main-panel" aria-label="محتوى الموقع">
-        <div class="tab-panel work-panel is-visible" id="workPanel" role="tabpanel">
-          <div class="work-scroll" id="workScroll" tabindex="0" aria-label="الأعمال، مرر لعرض المشاريع">
-            <div class="project-list" id="projectList"></div>
-          </div>
-        </div>
-        <div class="tab-panel info-panel" id="experiencePanel" role="tabpanel" hidden>
-          <div class="info-scroll">
-            <div class="info-inner" dir="rtl">
-              <h2>الخبرات</h2>
-              <div class="timeline experience-timeline">
-                <article>
-                  <div class="experience-meta"><time><bdi dir="ltr">09/2024</bdi> – الآن</time><span>السعودية</span></div>
-                  <div class="experience-details">
-                    <h3><bdi>UX/UI Designer</bdi></h3>
-                    <p class="experience-company"><bdi>Wakeb Data</bdi></p>
-                    <ul class="experience-points">
-                      <li>عملت على مبادرات تصميم <bdi>UI</bdi> مع تركيز قوي على إنشاء <bdi>Design System</bdi> قابل للتوسع وصيانته للمنتجات الداخلية.</li>
-                      <li>حددت أنماط التصميم ووحّدت <bdi>UI components</bdi> لضمان اتساق المنتج.</li>
-                      <li>تعاونت عن قرب مع المطورين ومديري المنتجات لضمان تنفيذ التصميمات البصرية بدقة <bdi>pixel-perfect</bdi>.</li>
-                      <li>أجريت مراجعات للواجهات وتقييمات <bdi>accessibility</bdi> للمنصات الحالية.</li>
-                      <li>حسّنت الجانب البصري للمنتج مع الحفاظ على <bdi>usability</bdi> و<bdi>responsiveness</bdi> ومبادئ <bdi>user-centered design</bdi>.</li>
-                    </ul>
-                  </div>
-                </article>
-                <article>
-                  <div class="experience-meta"><time><bdi dir="ltr">02/2024</bdi> – <bdi dir="ltr">11/2024</bdi></time><span>السعودية</span></div>
-                  <div class="experience-details">
-                    <h3><bdi>UX/UI Designer</bdi></h3>
-                    <p class="experience-company"><bdi>TOQ</bdi></p>
-                    <ul class="experience-points">
-                      <li>قدمت تصميمات <bdi>UI/UX</bdi> لعدة مشاريع متزامنة في قطاعات الرعاية الصحية والتجارة الإلكترونية والخدمات.</li>
-                      <li>أجريت <bdi>user research</bdi> و<bdi>wireframing</bdi> و<bdi>prototyping</bdi> و<bdi>usability testing</bdi> لمجموعات متنوعة من المستخدمين.</li>
-                      <li>أنشأت <bdi>responsive layouts</bdi> و<bdi>high-fidelity mockups</bdi> باستخدام <bdi>Figma</bdi>.</li>
-                      <li>شاركت في <bdi>daily scrums</bdi> و<bdi>sprint reviews</bdi> و<bdi>design critiques</bdi> مع فرق تطوير تعمل بمنهجية <bdi>agile</bdi>.</li>
-                      <li>ضمنت توافق التصميم البصري مع إرشادات الهوية التجارية واحتياجات المستخدمين.</li>
-                    </ul>
-                  </div>
-                </article>
-                <article>
-                  <div class="experience-meta"><time><bdi dir="ltr">05/2023</bdi> – <bdi dir="ltr">02/2024</bdi></time><span>مصر</span></div>
-                  <div class="experience-details">
-                    <h3><bdi>Product Designer</bdi></h3>
-                    <p class="experience-company"><bdi>RGB Group</bdi></p>
-                    <ul class="experience-points">
-                      <li>عملت <bdi>Product Designer</bdi> على نظام <bdi>ERP</bdi> واسع النطاق وحل <bdi>POS</bdi>.</li>
-                      <li>صممت واجهات مستخدم لمسارات عمل معقدة و<bdi>dashboards</bdi> لدعم العمليات التجارية.</li>
-                      <li>أنشأت ووثقت <bdi>Design System</bdi> متكاملًا لضمان الاتساق عبر الوحدات.</li>
-                      <li>حللت شكاوى المستخدمين وعالجتها من خلال <bdi>UX audits</bdi> ودورات ملاحظات العملاء.</li>
-                      <li>تعاونت مع فرق متعددة التخصصات لتحسين <bdi>task flows</bdi> و<bdi>navigation</bdi> ومنع الأخطاء.</li>
-                    </ul>
-                  </div>
-                </article>
-                <article>
-                  <div class="experience-meta"><time><bdi dir="ltr">11/2022</bdi> – <bdi dir="ltr">05/2023</bdi></time><span>مصر</span></div>
-                  <div class="experience-details">
-                    <h3><bdi>UX/UI Designer</bdi></h3>
-                    <p class="experience-company"><bdi>Dr.Code</bdi></p>
-                    <ul class="experience-points">
-                      <li>أنشأت <bdi>wireframes</bdi> و<bdi>prototypes</bdi> وتصميمات واجهات للمشاريع الداخلية ومنصات العملاء.</li>
-                    </ul>
-                  </div>
-                </article>
-              </div>
-              <h3 class="skills-heading">المهارات</h3>
-              <div class="skill-list"><span>UI Prototyping</span><span>Wireframing</span><span>Design System</span><span>Auto Layout</span><span>Variables</span><span>Vibe Coding</span></div>
-              <h3 class="skills-heading software-heading">البرامج التي أستخدمها</h3>
-              <div class="skill-list software-list" aria-label="البرامج التي أستخدمها"><span class="software-card" title="Figma"><img src="assets/icons/software/figma.svg" alt="Figma"></span><span class="software-card" title="Photoshop"><img src="assets/icons/software/photoshop.svg" alt="Photoshop"></span><span class="software-card" title="Illustrator"><img src="assets/icons/software/illustrator.svg" alt="Illustrator"></span><span class="software-card" title="Notion"><img src="assets/icons/software/notion.svg" alt="Notion"></span><span class="software-card" title="Miro"><img src="assets/icons/software/miro.svg" alt="Miro"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-panel info-panel" id="aboutPanel" role="tabpanel" hidden>
-          <div class="info-scroll">
-            <article class="info-inner about-article" dir="rtl">
-              <h2>عني</h2>
-              <p class="info-intro">أحوّل تعقيد المنتجات الرقمية إلى تجارب واضحة وسهلة الاستخدام.</p>
-              <section class="about-section">
-                <h3>من أنا؟</h3>
-                <p>أنا أحمد مبروك، مصمم <bdi>UX/UI</bdi> و<bdi>Product Designer</bdi>، متخصص في تصميم المنتجات الرقمية المعقدة وواسعة النطاق. أركز على تحويل العمليات والمعلومات المعقدة إلى تجارب واضحة، منظمة وسهلة الاستخدام.</p>
-              </section>
-              <section class="about-section">
-                <h3>خبرتي</h3>
-                <p>عملت على مجموعة متنوعة من المنتجات، تشمل <strong>أنظمة <bdi>ERP</bdi>، لوحات التحكم، تطبيقات الهواتف، منصات <bdi>SaaS</bdi>، أنظمة <bdi>POS</bdi> ومنتجات الذكاء الاصطناعي</strong>، عبر مجالات مختلفة مثل <bdi>Fintech</bdi>، التجارة الإلكترونية، التعليم والخدمات.</p>
-              </section>
-              <section class="about-section">
-                <h3>طريقة عملي</h3>
-                <p>أبدأ بفهم المشكلة واحتياجات المستخدم، ثم أحولها إلى تجربة متكاملة تربط بين <strong>احتياجات المستخدم، أهداف المنتج وقابلية التنفيذ</strong>. أهتم بشكل خاص بتبسيط <bdi>workflows</bdi> وتنظيم المنتجات التي تحتوي على كميات كبيرة من البيانات.</p>
-              </section>
-              <section class="about-section">
-                <h3><bdi>Design Systems</bdi></h3>
-                <p>أمتلك خبرة في بناء وتطوير <strong><bdi>Design Systems</bdi> قابلة للتوسع</strong>، تساعد على توحيد التجربة، تنظيم المكونات وتسريع عملية التصميم والتطوير، خصوصًا في المنتجات الكبيرة.</p>
-              </section>
-              <section class="about-section">
-                <h3>اهتمامي بالـ<bdi>AI</bdi></h3>
-                <p>أهتم بتصميم تجارب ومنتجات الذكاء الاصطناعي، وتحويل الإمكانيات التقنية المعقدة إلى تجارب بسيطة ومفهومة للمستخدم، مع التركيز على الاستخدام العملي والقيمة الحقيقية للمنتج.</p>
-              </section>
-              <section class="about-section about-belief">
-                <h3>ما أؤمن به</h3>
-                <p><strong>التصميم الجيد لا يجعل المنتج أجمل فقط، بل يجعله أوضح، أسهل، وأكثر قابلية للنمو.</strong></p>
-              </section>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-  <nav class="mobile-nav" aria-label="التنقل الرئيسي للموبايل">
-    <button class="mobile-tab" data-tab="about" type="button" aria-selected="false"><span class="mobile-tab-icon" aria-hidden="true"><img class="icon-outline" src="assets/icons/mobile-nav/user-outline.svg" alt=""><img class="icon-filled" src="assets/icons/mobile-nav/user-filled.svg" alt=""></span><span>عنــي</span></button>
-    <button class="mobile-tab" data-tab="experience" type="button" aria-selected="false"><span class="mobile-tab-icon" aria-hidden="true"><img class="icon-outline" src="assets/icons/mobile-nav/briefcase-outline.svg" alt=""><img class="icon-filled" src="assets/icons/mobile-nav/briefcase-filled.svg" alt=""></span><span>الخبرات</span></button>
-    <button class="mobile-tab is-active" data-tab="work" type="button" aria-selected="true"><span class="mobile-tab-icon" aria-hidden="true"><img class="icon-outline" src="assets/icons/mobile-nav/work-outline.svg" alt=""><img class="icon-filled" src="assets/icons/mobile-nav/work-filled.svg" alt=""></span><span>معرض الأعمال</span></button>
-  </nav>
-  <div class="construction-ticker" id="constructionTicker" role="status" aria-label="أهلًا بك في معرض أعمال أحمد مبروك. المشاريع المعروضة قديمة ومن عام 2023، والمشاريع الأحدث قيد الرفع.">
-    <div class="construction-ticker-track" aria-hidden="true"><div class="construction-ticker-group"><span class="construction-ticker-chunk"><span class="ticker-welcome">أهلًا بك في معرض أعمال أحمد مبروك</span><span class="ticker-separator">✦</span><span class="ticker-notice">المشاريع المعروضة قديمة ومن عام 2023، والمشاريع الأحدث قيد الرفع</span><span class="ticker-separator">✦</span></span></div></div>
-  </div>
-  <dialog class="project-modal" id="projectModal" aria-labelledby="projectModalTitle" aria-describedby="projectModalDescription">
-    <div class="project-modal-header">
-      <div class="project-modal-copy">
-        <h2 id="projectModalTitle"></h2>
-        <p id="projectModalDescription"></p>
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="giant" id="giant" aria-hidden="true">PORTFOLIO</div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="hello"><span class="ar">أهلاً، أنا</span><span class="en">Hello, I'm</span></p>
+      <h1 class="display name"><span class="ar">أحمد مبروك<span class="dot">.</span></span><span class="en">Ahmed<br>Mabrouk<span class="dot">.</span></span></h1>
+      <p class="role"><span class="ar">مصمم UI/UX أول<br>ومصمم منتجات رقمية</span><span class="en">Senior UI/UX &amp;<br>Product Designer</span></p>
+      <p class="lede"><span class="ar">أصمم المنتجات الرقمية المعقدة وواسعة النطاق: أنظمة ERP، لوحات تحكم كثيفة البيانات، منصات SaaS ومنتجات الذكاء الاصطناعي، وأحوّلها لتجارب واضحة وسهلة.</span><span class="en">I design complex, large-scale digital products — ERP systems, data-heavy dashboards, SaaS platforms and AI products — and turn them into clear, usable experiences.</span></p>
+      <div class="cta-row">
+        <a class="btn" href="#work"><span class="ar">شاهد أعمالي</span><span class="en">See my work</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+        <a class="btn ghost" href="https://drive.google.com/uc?export=download&amp;id=1cgX7XjNRgQP679iI-yyHkjdh6W9aFECn" target="_blank" rel="noopener"><span class="ar">السيرة الذاتية</span><span class="en">Download CV</span></a>
       </div>
-      <button class="project-modal-close" id="projectModalClose" type="button" aria-label="إغلاق العرض">×</button>
+      <div class="loc"><span class="live"></span><span class="ar">متاح لمشاريع جديدة · مصر</span><span class="en">Available for new projects · Egypt</span></div>
     </div>
-    <div class="project-zoom-viewport" id="projectZoomViewport">
-      <img id="projectModalImage" alt="" width="1200" height="900">
+    <figure class="portrait" id="portrait"><img src="assets/portrait.webp" width="887" height="900" alt="Ahmed Mabrouk" fetchpriority="high"></figure>
+    <div class="stats">
+      <div class="stat"><strong data-count="5">5+</strong><span class="ar">سنوات خبرة</span><span class="en">Years of experience</span></div>
+      <div class="stat"><strong data-count="60">60+</strong><span class="ar">مشروع مُسلَّم</span><span class="en">Projects shipped</span></div>
+      <div class="stat"><strong data-count="16">16+</strong><span class="ar">قطاع مختلف</span><span class="en">Industries</span></div>
     </div>
-  </dialog>
-  <div class="smooth-follower" id="smoothFollower" aria-hidden="true">
-    <span class="smooth-follower-dot"></span>
-    <span class="smooth-follower-ring"></span>
   </div>
-  <script src="app.js"></script>
-  <script src="smooth-follower.js"></script>
+</section>
+
+<!-- WORK -->
+<section class="band" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><b>01</b> / <span class="ar">أعمال مختارة</span><span class="en">Selected work</span></p>
+        <h2 class="display"><span class="ar">أعمال <span class="red">تتكلم.</span></span><span class="en">Work that <span class="red">speaks.</span></span></h2>
+      </div>
+      <div class="arrows">
+        <button type="button" id="prev" aria-label="Previous"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button type="button" id="next" aria-label="Next"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+    <div class="rail" id="rail"></div>
+  </div>
+</section>
+
+<!-- BEEN PART OF -->
+<section class="part" aria-label="Companies">
+  <div class="wrap">
+    <p class="label"><span class="ar">كنت جزءًا من<br>الصورة الأكبر</span><span class="en">Been part of<br>the bigger picture</span></p>
+    <div class="marquee"><div class="track">
+      <span class="co">WAKEB DATA</span><span class="co">TOQ</span><span class="co">RGB GROUP</span><span class="co">DR.CODE</span><span class="co">ERP · POS · SAAS</span><span class="co">DESIGN SYSTEMS</span>
+      <span class="co" aria-hidden="true">WAKEB DATA</span><span class="co" aria-hidden="true">TOQ</span><span class="co" aria-hidden="true">RGB GROUP</span><span class="co" aria-hidden="true">DR.CODE</span><span class="co" aria-hidden="true">ERP · POS · SAAS</span><span class="co" aria-hidden="true">DESIGN SYSTEMS</span>
+    </div></div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="band impact" id="impact">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><b>02</b> / <span class="ar">النطاق والأثر</span><span class="en">Scope &amp; impact</span></p>
+      <h2 class="display"><span class="ar">الشغل.<br><span class="red">والأثر.</span></span><span class="en">The work.<br><span class="red">The impact.</span></span></h2>
+      <div class="laurel">
+        <svg viewBox="0 0 46 84" fill="currentColor" aria-hidden="true"><path d="M40 82C18 72 6 52 8 26l3 1C10 51 21 69 41 79z"/><ellipse cx="10" cy="20" rx="4" ry="9" transform="rotate(-12 10 20)"/><ellipse cx="5" cy="36" rx="4" ry="9" transform="rotate(-40 5 36)"/><ellipse cx="8" cy="52" rx="4" ry="9" transform="rotate(-62 8 52)"/><ellipse cx="17" cy="66" rx="4" ry="9" transform="rotate(-78 17 66)"/></svg>
+        <strong data-count="60">60<sup>+</sup></strong>
+        <svg viewBox="0 0 46 84" fill="currentColor" aria-hidden="true" style="transform:scaleX(-1)"><path d="M40 82C18 72 6 52 8 26l3 1C10 51 21 69 41 79z"/><ellipse cx="10" cy="20" rx="4" ry="9" transform="rotate(-12 10 20)"/><ellipse cx="5" cy="36" rx="4" ry="9" transform="rotate(-40 5 36)"/><ellipse cx="8" cy="52" rx="4" ry="9" transform="rotate(-62 8 52)"/><ellipse cx="17" cy="66" rx="4" ry="9" transform="rotate(-78 17 66)"/></svg>
+      </div>
+      <p class="under">PROJECTS SHIPPED</p>
+      <p class="desc"><span class="ar">مشاريع في أكثر من 16 قطاع، من التقنية المالية والتجارة الإلكترونية إلى التعليم والرعاية الصحية والخدمات.</span><span class="en">Products across 16+ industries, from fintech and e-commerce to education, healthcare and services.</span></p>
+    </div>
+    <ul class="list">
+      <li><span class="i">01</span><h4><span class="ar">أنظمة ERP</span><span class="en">ERP Systems</span><small><span class="ar">وحدات متكاملة ومسارات عمل معقدة</span><span class="en">Connected modules and complex workflows</span></small></h4><span class="tag">RGB GROUP</span></li>
+      <li><span class="i">02</span><h4><span class="ar">Design Systems</span><span class="en">Design Systems</span><small><span class="ar">مكونات موحّدة قابلة للتوسع وموثّقة</span><span class="en">Scalable, documented component libraries</span></small></h4><span class="tag">WAKEB DATA</span></li>
+      <li><span class="i">03</span><h4><span class="ar">لوحات تحكم كثيفة البيانات</span><span class="en">Data-heavy Dashboards</span><small><span class="ar">تنظيم المعلومات لدعم القرار</span><span class="en">Information structured for decisions</span></small></h4><span class="tag">ENTERPRISE</span></li>
+      <li><span class="i">04</span><h4><span class="ar">أنظمة نقاط البيع POS</span><span class="en">POS Solutions</span><small><span class="ar">سرعة ودقة في لحظة البيع</span><span class="en">Speed and accuracy at the counter</span></small></h4><span class="tag">RETAIL</span></li>
+      <li><span class="i">05</span><h4><span class="ar">تطبيقات الموبايل</span><span class="en">Mobile Apps</span><small><span class="ar">رعاية صحية، تجارة إلكترونية، خدمات</span><span class="en">Healthcare, e-commerce and services</span></small></h4><span class="tag">TOQ</span></li>
+      <li><span class="i">06</span><h4><span class="ar">منتجات الذكاء الاصطناعي</span><span class="en">AI-Powered Products</span><small><span class="ar">تقنية معقدة بتجربة بسيطة ومفهومة</span><span class="en">Complex tech, simple experiences</span></small></h4><span class="tag">AI</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- RAW TO REAL -->
+<section class="band raw" id="process">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><b>03</b> / <span class="ar">تحت السطح</span><span class="en">A look under the surface</span></p>
+      <h2 class="display"><span class="ar">من الهيكل.<br><span class="red">للواقع.</span></span><span class="en">From wire.<br><span class="red">To real.</span></span></h2>
+      <p><span class="ar">نظام موارد بشرية كامل، من خطوط الهيكل الأولى إلى الواجهة النهائية. اسحب المؤشر وشاهد الفرق.</span><span class="en">A full HR system, from the first structural lines to the shipped interface. Drag the handle to compare.</span></p>
+    </div>
+    <div class="compare" id="compare">
+      <img src="assets/wireframe.webp" alt="HR system — structure" width="1200" height="900">
+      <img class="after" src="assets/projects/mabroukui-3.webp" alt="HR system — final UI" width="1200" height="900">
+      <span class="tagl">Wireframe</span><span class="tagr">Final UI</span>
+      <input type="range" min="0" max="100" value="52" id="cmp" aria-label="Compare wireframe and final design">
+      <span class="handle"><span class="knob"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="band about" id="about">
+  <div class="wrap">
+    <div class="top-row">
+      <div>
+        <p class="eyebrow"><b>04</b> / <span class="ar">خلف الشاشات</span><span class="en">Behind the screens</span></p>
+        <h2 class="display"><span class="ar">ليست مجرد واجهات.<br>بل تجربة <span class="red">واضحة.</span></span><span class="en">Not just screens.<br>It's <span class="red">clarity.</span></span></h2>
+      </div>
+      <p class="intro"><span class="ar">أنا أحمد مبروك، مصمم UX/UI ومصمم منتجات من مصر. أركز على تحويل العمليات والمعلومات المعقدة إلى تجارب منظمة، تربط احتياجات المستخدم بأهداف المنتج وقابلية التنفيذ.</span><span class="en">I'm Ahmed Mabrouk, a UX/UI and product designer from Egypt. I turn complex processes and information into organized experiences that balance user needs, business goals and technical feasibility.</span></p>
+    </div>
+    <div class="grid">
+      <div class="blk">
+        <h3><span class="ar">المهارات والتخصص</span><span class="en">Skills &amp; focus</span></h3>
+        <div class="edu">
+          <div><b><span class="ar">التخصص</span><span class="en">Focus</span></b><p><span class="ar">Enterprise SaaS، أنظمة ERP، لوحات تحكم معقدة ومنتجات AI.</span><span class="en">Enterprise SaaS, ERP systems, complex dashboards and AI products.</span></p></div>
+          <div><b><span class="ar">نقطة القوة</span><span class="en">Strength</span></b><p><span class="ar">تبسيط الـ workflows وتنظيم المنتجات كثيفة البيانات.</span><span class="en">Simplifying workflows and organizing data-heavy products.</span></p></div>
+          <div><b><span class="ar">الأدوات</span><span class="en">Toolkit</span></b>
+            <div class="chips"><span>UI Prototyping</span><span>Wireframing</span><span>Design System</span><span>Auto Layout</span><span>Variables</span><span>Vibe Coding</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="blk">
+        <h3><span class="ar">من المشكلة إلى التسليم</span><span class="en">From problem to handoff</span></h3>
+        <ol class="steps">
+          <li><span class="n">01</span><span class="pin"></span><div><h4><span class="ar">الفهم</span><span class="en">Understand</span></h4><p><span class="ar">البحث مع المستخدمين وفهم المشكلة وأهداف المنتج.</span><span class="en">Research with users; frame the problem and product goals.</span></p></div></li>
+          <li><span class="n">02</span><span class="pin"></span><div><h4><span class="ar">الهيكلة</span><span class="en">Structure</span></h4><p><span class="ar">Task flows وwireframes ومعمارية المعلومات.</span><span class="en">Task flows, wireframes and information architecture.</span></p></div></li>
+          <li><span class="n">03</span><span class="pin"></span><div><h4><span class="ar">التصميم</span><span class="en">Design</span></h4><p><span class="ar">واجهات عالية الدقة مبنية على Design System موحّد.</span><span class="en">High-fidelity UI built on a single design system.</span></p></div></li>
+          <li><span class="n">04</span><span class="pin"></span><div><h4><span class="ar">التسليم</span><span class="en">Handoff</span></h4><p><span class="ar">تعاون مع المطورين لتنفيذ pixel-perfect ومراجعات UX.</span><span class="en">Pixel-perfect delivery with developers, plus UX reviews.</span></p></div></li>
+        </ol>
+      </div>
+      <figure class="quote">
+        <p><span class="ar">التصميم الجيد لا يجعل المنتج أجمل فقط، بل يجعله أوضح، أسهل، وأكثر قابلية للنمو.</span><span class="en">Good design doesn't just make a product prettier. It makes it clearer, easier, and ready to grow.</span></p>
+        <cite><span class="ar">أحمد مبروك</span><span class="en">Ahmed Mabrouk</span></cite>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="band journey" id="journey">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><b>05</b> / <span class="ar">الرحلة</span><span class="en">The journey</span></p>
+      <h2 class="display"><span class="ar">خطوات صغيرة.<br><span class="red">أثر كبير.</span></span><span class="en">Little steps.<br><span class="red">Big products.</span></span></h2>
+      <div class="timeline" id="timeline">
+        <div class="job open">
+          <button type="button" aria-expanded="true"><time>09/2024 — <span class="ar">الآن</span><span class="en">Now</span></time><h3>UX/UI Designer<small>Wakeb Data · <span class="ar">السعودية</span><span class="en">Saudi Arabia</span></small></h3><span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="body"><div><ul>
+            <li><span class="ar">بناء Design System قابل للتوسع وصيانته للمنتجات الداخلية.</span><span class="en">Built and maintained a scalable design system for internal products.</span></li>
+            <li><span class="ar">توحيد أنماط التصميم وUI components لضمان اتساق المنتج.</span><span class="en">Defined design patterns and standardized UI components for consistency.</span></li>
+            <li><span class="ar">مراجعات للواجهات وتقييمات accessibility للمنصات الحالية.</span><span class="en">Ran UI reviews and accessibility audits on existing platforms.</span></li>
+          </ul></div></div>
+        </div>
+        <div class="job">
+          <button type="button" aria-expanded="false"><time>02/2024 — 11/2024</time><h3>UX/UI Designer<small>TOQ · <span class="ar">السعودية</span><span class="en">Saudi Arabia</span></small></h3><span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="body"><div><ul>
+            <li><span class="ar">تصميم UI/UX لعدة مشاريع متزامنة في الرعاية الصحية والتجارة الإلكترونية والخدمات.</span><span class="en">Delivered UI/UX for concurrent projects in healthcare, e-commerce and services.</span></li>
+            <li><span class="ar">User research وwireframing وprototyping وusability testing.</span><span class="en">User research, wireframing, prototyping and usability testing.</span></li>
+            <li><span class="ar">العمل ضمن فرق agile في daily scrums وsprint reviews.</span><span class="en">Worked in agile teams through daily scrums and sprint reviews.</span></li>
+          </ul></div></div>
+        </div>
+        <div class="job">
+          <button type="button" aria-expanded="false"><time>05/2023 — 02/2024</time><h3>Product Designer<small>RGB Group · <span class="ar">مصر</span><span class="en">Egypt</span></small></h3><span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="body"><div><ul>
+            <li><span class="ar">تصميم نظام ERP واسع النطاق وحل POS.</span><span class="en">Designed a large-scale ERP system and a POS solution.</span></li>
+            <li><span class="ar">إنشاء وتوثيق Design System متكامل عبر الوحدات.</span><span class="en">Created and documented a complete design system across modules.</span></li>
+            <li><span class="ar">معالجة شكاوى المستخدمين عبر UX audits ودورات الملاحظات.</span><span class="en">Resolved user pain points through UX audits and feedback loops.</span></li>
+          </ul></div></div>
+        </div>
+        <div class="job">
+          <button type="button" aria-expanded="false"><time>11/2022 — 05/2023</time><h3>UX/UI Designer<small>Dr.Code · <span class="ar">مصر</span><span class="en">Egypt</span></small></h3><span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="body"><div><ul>
+            <li><span class="ar">Wireframes وprototypes وتصميم واجهات للمشاريع الداخلية ومنصات العملاء.</span><span class="en">Wireframes, prototypes and UI for internal projects and client platforms.</span></li>
+          </ul></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="side">
+      <div class="blk">
+        <h3><span class="ar">البرامج</span><span class="en">Software</span></h3>
+        <div class="tools">
+          <span title="Figma"><img src="assets/icons/figma.svg" alt="Figma"></span>
+          <span title="Photoshop"><img src="assets/icons/photoshop.svg" alt="Photoshop"></span>
+          <span title="Illustrator"><img src="assets/icons/illustrator.svg" alt="Illustrator"></span>
+          <span title="Notion"><img src="assets/icons/notion.svg" alt="Notion"></span>
+          <span title="Miro"><img src="assets/icons/miro.svg" alt="Miro"></span>
+        </div>
+      </div>
+      <div class="blk">
+        <h3><span class="ar">مجالات عملت فيها</span><span class="en">Industries</span></h3>
+        <ul class="sectors">
+          <li><span class="ar">التقنية المالية</span><span class="en">Fintech</span><span class="ar">Fintech</span></li>
+          <li><span class="ar">التجارة الإلكترونية</span><span class="en">E-commerce</span><span class="ar">E-commerce</span></li>
+          <li><span class="ar">الرعاية الصحية</span><span class="en">Healthcare</span><span class="ar">Health</span></li>
+          <li><span class="ar">التعليم</span><span class="en">Education</span><span class="ar">EdTech</span></li>
+          <li><span class="ar">الخدمات والمؤسسات</span><span class="en">Services &amp; enterprise</span><span class="ar">B2B</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="band contact" id="contact">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><b>06</b> / <span class="ar">مشروعك القادم</span><span class="en">Your next product</span></p>
+      <h2 class="display"><span class="ar">لنعمل<br>معًا<span class="red">.</span></span><span class="en">Let's work<br>together<span class="red">.</span></span></h2>
+      <p class="pitch"><span class="ar">لديك منتج معقد يحتاج أن يكون أوضح؟ أخبرني عنه ولنبدأ.</span><span class="en">Got a complex product that needs to feel clear? Tell me about it.</span></p>
+      <a class="btn" href="https://wa.me/201113949916" target="_blank" rel="noopener"><span class="ar">ابدأ المحادثة</span><span class="en">Start a conversation</span> ↗</a>
+    </div>
+    <ul class="ways">
+      <li><div class="row"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><small><span class="ar">البريد</span><span class="en">Email</span></small><b>ahmed@mabroukui.com</b></span><button class="copy" type="button" data-copy="ahmed@mabroukui.com"><span class="ar">نسخ</span><span class="en">Copy</span></button></div></li>
+      <li><a href="https://wa.me/201113949916" target="_blank" rel="noopener"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/></svg></span><span><small>WhatsApp</small><b>+20 111 394 9916</b></span><span class="arr">↗</span></a></li>
+      <li><a href="https://www.linkedin.com/in/a7medmabrok0/" target="_blank" rel="noopener"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></span><span><small>LinkedIn</small><b>/in/a7medmabrok0</b></span><span class="arr">↗</span></a></li>
+      <li><a href="https://www.behance.net/a7medmabrok0" target="_blank" rel="noopener"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M8.2 11.4c.9-.4 1.5-1.2 1.5-2.4C9.7 6.6 8 6 6 6H1v12h5.2c2 0 4.1-1 4.1-3.4 0-1.5-.7-2.7-2.1-3.2zM3.3 8h2.2c.9 0 1.7.2 1.7 1.2s-.6 1.3-1.5 1.3H3.3zm2.4 8H3.3v-3.4h2.5c1 0 1.8.4 1.8 1.6 0 1.3-.9 1.8-1.9 1.8zM15 7h5v1.3h-5zm7.4 7c0-2.8-1.6-5-4.6-5s-4.8 2.2-4.8 5 1.7 5 4.8 5c2.3 0 3.8-1 4.5-3.2h-2.3c-.2.8-1.2 1.2-2.1 1.2-1.4 0-2.2-.8-2.3-2.2h6.8zm-6.8-1.3c.1-1.1.8-1.9 2.1-1.9s1.9.8 2 1.9z"/></svg></span><span><small>Behance</small><b>/a7medmabrok0</b></span><span class="arr">↗</span></a></li>
+      <li><a href="https://dribbble.com/a7medmabrok0" target="_blank" rel="noopener"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8.5 3.7c3 4 5.5 9 6.8 16.6M3.1 10.6c5.8.2 11-1.2 15-4.6M5.6 18.4c3-4.4 8-6 15.3-4.2"/></svg></span><span><small>Dribbble</small><b>/a7medmabrok0</b></span><span class="arr">↗</span></a></li>
+    </ul>
+    <div class="poster" id="poster">
+      <canvas id="planes" aria-hidden="true"></canvas>
+      <span class="rec"><i></i> mabroukui.com</span>
+      <p class="display"><span class="ar">اجعلها<br><span class="red">أوضح.</span></span><span class="en">Make it<br><span class="red">feel clear.</span></span></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Ahmed Mabrouk · mabroukui.com</span>
+    <span><span class="ar">صُمّم في مصر بعناية</span><span class="en">Designed with care in Egypt</span></span>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb">
+  <figure>
+    <img id="lbImg" alt="" width="1200" height="900">
+    <figcaption><span><b id="lbTitle"></b><small id="lbSub"></small></span><button class="x" type="button" id="lbClose" aria-label="Close">×</button></figcaption>
+  </figure>
+</dialog>
+
+<script>
+(() => {
+  const projects = [
+    ['mabroukui-3.webp','نظام الموارد البشرية','لوحة تحكم للموظفين','HR Management System','Employee dashboard','2023'],
+    ['mabroukui-5.webp','لوحة إدارة المتجر','تصميم منتج رقمي','Store Dashboard','Digital product design','2023'],
+    ['mabroukui-8.webp','إدارة المشاريع','تجربة متابعة المشاريع','Project Management','Project tracking experience','2023'],
+    ['mabroukui-6.webp','تطبيق السيارات','تجربة تطبيق للبحث عن السيارات','Car Marketplace App','Mobile car shopping','2023'],
+    ['mabroukui-7.webp','تطبيق تحويل الأموال','تجربة مالية للهواتف','Money Transfer App','Mobile finance experience','2023'],
+    ['mabroukui-9.webp','الاتحاد السعودي للاكروس','تجربة رياضية','Saudi Lacrosse Federation','Sports app experience','2023'],
+    ['mabroukui-10.webp','تطبيق الملف الشخصي','تجربة تواصل ومشاركة','Profile App','Social sharing experience','2023'],
+    ['mabroukui-11.webp','تطبيق The 6 Talk','تصميم تجربة للهواتف','The 6 Talk','Mobile app experience','2023'],
+    ['mabroukui.webp','منصتي التعليمية','موقع وتطبيق تعليمي','My Learning Platform','Educational website & app','2023'],
+    ['mabroukui-2.webp','ميدان التخزين','موقع وتطبيق خدمات','Midan Storage','Service website & app','2023'],
+    ['mabroukui-1.webp','جمعية طريق السلام','موقع جمعية','Path of Peace Association','Nonprofit website','2023'],
+    ['mabroukui-4.webp','شركة البناء الحديثة','موقع شركة','Modern Construction Co.','Corporate website','2023']
+  ];
+  const root = document.documentElement;
+  const isEn = () => root.lang === 'en';
+
+  /* language */
+  const setLang = l => {
+    root.lang = l; root.dir = l === 'en' ? 'ltr' : 'rtl';
+    try { localStorage.setItem('mabroukui-v2-lang', l); } catch (_) {}
+  };
+  try { const s = localStorage.getItem('mabroukui-v2-lang'); if (s) setLang(s); } catch (_) {}
+  document.getElementById('lang').addEventListener('click', () => setLang(isEn() ? 'ar' : 'en'));
+
+  /* work rail */
+  const rail = document.getElementById('rail');
+  const arrow = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  projects.forEach(([f, ta, da, te, de], i) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'card';
+    b.innerHTML = `<div class="shot"><img src="assets/projects/${f}" alt="" loading="${i < 3 ? 'eager' : 'lazy'}" width="1200" height="900"></div>
+      <div class="meta"><span class="idx">${String(i + 1).padStart(2, '0')}</span>
+      <span><h3><span class="ar">${ta}</span><span class="en">${te}</span></h3><small><span class="ar">${da}</span><span class="en">${de}</span></small></span>
+      <span class="go">${arrow}</span></div>`;
+    b.addEventListener('click', () => openLb(i));
+    rail.appendChild(b);
+  });
+  const step = dir => {
+    const w = rail.querySelector('.card').offsetWidth + 20;
+    const rtl = getComputedStyle(rail).direction === 'rtl';
+    rail.scrollBy({ left: dir * w * (rtl ? -1 : 1), behavior: 'smooth' });
+  };
+  document.getElementById('next').onclick = () => step(1);
+  document.getElementById('prev').onclick = () => step(-1);
+
+  /* lightbox */
+  const lb = document.getElementById('lb');
+  function openLb(i) {
+    const p = projects[i];
+    document.getElementById('lbImg').src = 'assets/projects/' + p[0];
+    document.getElementById('lbImg').alt = isEn() ? p[3] : p[1];
+    document.getElementById('lbTitle').textContent = isEn() ? p[3] : p[1];
+    document.getElementById('lbSub').textContent = isEn() ? p[4] : p[2];
+    lb.showModal();
+  }
+  document.getElementById('lbClose').onclick = () => lb.close();
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+  /* timeline accordion */
+  document.querySelectorAll('.job > button').forEach(btn => btn.addEventListener('click', () => {
+    const job = btn.parentElement, open = !job.classList.contains('open');
+    job.classList.toggle('open', open); btn.setAttribute('aria-expanded', open);
+  }));
+
+  /* compare slider */
+  const cmp = document.getElementById('compare'), range = document.getElementById('cmp');
+  range.addEventListener('input', () => cmp.style.setProperty('--pos', range.value + '%'));
+
+  /* copy */
+  document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', () => {
+    const t = b.dataset.copy, label = b.innerHTML;
+    const done = () => { b.textContent = isEn() ? 'Copied' : 'تم النسخ'; setTimeout(() => b.innerHTML = label, 1600); };
+    if (navigator.clipboard) navigator.clipboard.writeText(t).then(done, () => sel(b)); else sel(b);
+  }));
+  function sel(b) { const r = document.createRange(); r.selectNodeContents(b.previousElementSibling.querySelector('b')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* count up */
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return; io.unobserve(e.target);
+      const el = e.target, end = +el.dataset.count, sup = el.querySelector('sup'), t0 = performance.now();
+      const tick = t => { const k = Math.min(1, (t - t0) / 1100), v = Math.round(end * (1 - Math.pow(1 - k, 3)));
+        el.firstChild.nodeValue = v + (sup ? '' : '+'); if (k < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+    }), { threshold: .6 });
+    document.querySelectorAll('[data-count]').forEach(el => io.observe(el));
+  }
+
+  /* hero parallax */
+  const giant = document.getElementById('giant');
+  if (!reduce) addEventListener('scroll', () => {
+    const y = scrollY; if (y > 1000) return;
+    giant.style.transform = `translateY(${y * .35}px)`;
+  }, { passive: true });
+
+  /* cursor trail: little paper-plane triangles */
+  const cv = document.getElementById('trail'), cx = cv.getContext('2d');
+  const colors = ['#ec2340', '#ff3a55', '#eef0f6', '#96b4e6', '#5ee0c4'];
+  let parts = [], dpr = Math.min(2, devicePixelRatio || 1), last = 0, running = false;
+  const size = () => { cv.width = innerWidth * dpr; cv.height = innerHeight * dpr; };
+  size(); addEventListener('resize', size);
+  const fine = matchMedia('(pointer: fine)').matches;
+  if (fine && !reduce) addEventListener('pointermove', e => {
+    const now = performance.now(); if (now - last < 28) return; last = now;
+    parts.push({ x: e.clientX, y: e.clientY, vx: (Math.random() - .5) * 1.6, vy: (Math.random() - .5) * 1.6 + .4,
+      r: Math.random() * Math.PI * 2, vr: (Math.random() - .5) * .12, s: 5 + Math.random() * 5,
+      c: colors[(Math.random() * colors.length) | 0], life: 1 });
+    if (parts.length > 60) parts.shift();
+    if (!running) { running = true; requestAnimationFrame(draw); }
+  });
+  function tri(ctx, p) {
+    ctx.save(); ctx.translate(p.x * dpr, p.y * dpr); ctx.rotate(p.r); ctx.globalAlpha = p.life;
+    ctx.fillStyle = p.c; ctx.beginPath(); const s = p.s * dpr;
+    ctx.moveTo(s, 0); ctx.lineTo(-s * .8, s * .6); ctx.lineTo(-s * .4, 0); ctx.lineTo(-s * .8, -s * .6); ctx.closePath(); ctx.fill(); ctx.restore();
+  }
+  function draw() {
+    cx.clearRect(0, 0, cv.width, cv.height);
+    parts.forEach(p => { p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life -= .018; tri(cx, p); });
+    parts = parts.filter(p => p.life > 0);
+    if (parts.length) requestAnimationFrame(draw); else { running = false; cx.clearRect(0, 0, cv.width, cv.height); }
+  }
+
+  /* contact poster: drifting paper planes that flee the pointer */
+  const pc = document.getElementById('planes'), px = pc.getContext('2d'), poster = document.getElementById('poster');
+  let planes = [], mouse = { x: -999, y: -999 }, pw = 0, ph = 0, visible = false;
+  const psize = () => { const r = poster.getBoundingClientRect(); pw = r.width; ph = r.height; pc.width = pw * dpr; pc.height = ph * dpr; };
+  psize(); addEventListener('resize', psize);
+  for (let i = 0; i < 42; i++) planes.push({ x: Math.random() * pw, y: Math.random() * ph * .7, a: Math.random() * 6.28,
+    sp: .3 + Math.random() * .6, s: 4 + Math.random() * 6, c: colors[i % colors.length] });
+  poster.addEventListener('pointermove', e => { const r = poster.getBoundingClientRect(); mouse = { x: e.clientX - r.left, y: e.clientY - r.top }; });
+  poster.addEventListener('pointerleave', () => mouse = { x: -999, y: -999 });
+  function fly() {
+    px.clearRect(0, 0, pc.width, pc.height);
+    planes.forEach(p => {
+      const dx = p.x - mouse.x, dy = p.y - mouse.y, d = Math.hypot(dx, dy);
+      if (d < 110) { const t = Math.atan2(dy, dx); p.a += (t - p.a) * .12; }
+      else p.a += (Math.random() - .5) * .06;
+      const v = d < 110 ? p.sp * 4 : p.sp;
+      p.x += Math.cos(p.a) * v; p.y += Math.sin(p.a) * v;
+      if (p.x < -20) p.x = pw + 20; if (p.x > pw + 20) p.x = -20; if (p.y < -20) p.y = ph + 20; if (p.y > ph + 20) p.y = -20;
+      tri(px, { x: p.x, y: p.y, r: p.a, s: p.s, c: p.c, life: .9 });
+    });
+    if (visible) requestAnimationFrame(fly);
+  }
+  if (reduce) { visible = false; planes.forEach(p => tri(px, { x: p.x, y: p.y, r: p.a, s: p.s, c: p.c, life: .9 })); }
+  else if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { const was = visible; visible = e.isIntersecting; if (visible && !was) requestAnimationFrame(fly); }).observe(poster);
+  else { visible = true; fly(); }
+})();
+</script>
 </body>
 </html>
